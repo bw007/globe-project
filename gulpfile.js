@@ -20,21 +20,21 @@ const path = {
     pug: "src/pug/pages/**/*.pug",
     scss: "src/scss/style.scss",
     ts: "src/ts/**/*.ts",
-    img: "src/imgs/**/*.{jpg,png,svg,gif,ico}",
+    img: "src/images/**/*.{jpg,png,svg,gif,ico}",
     font: "src/fonts/**/*"
   },
   watch: {
     pug: "src/pug/**/*.pug",
     scss: "src/scss/**/*.scss",
     ts: "src/ts/**/*.ts",
-    img: "src/imgs/**/*.{jpg,png,svg,gif,ico}",
+    img: "src/images/**/*.{jpg,png,svg,gif,ico}",
     font: "src/fonts/**/*",
   },
   build: {
     html: "dist/",
     css: "dist/css/",
     js: "dist/js/",
-    img: "dist/imgs/",
+    img: "dist/images/",
     font: "dist/fonts/",
   },
 };
