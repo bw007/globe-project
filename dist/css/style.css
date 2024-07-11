@@ -230,6 +230,7 @@ template {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -238,18 +239,24 @@ body {
 
 .btn {
     cursor: pointer;
-    outline: none;
     color: #112211;
-    border: 2px solid transparent;
+    border: 2px solid #FFFFFF;
+    outline: 1px solid #FFFFFF;
+    outline-offset: -2px;
     background-color: transparent;
     height: 40px;
     padding: 7px 15px;
-    border-radius: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 7px;
     font-size: 0.875rem;
-    line-height: auto;
+    line-height: 1.5;
     font-weight: 500;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    transition-duration: 150ms;
+    transition-property: background-color, border-color, outline-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 100ms;
 }
 
 .btn__success {
@@ -262,8 +269,27 @@ body {
 
 .btn__success:focus {
     background-color: #A5EBD3;
+    border-color: #82CBB2;
 }
 
 .btn__success:active {
     background-color: #82CBB2;
+}
+
+.btn__plain {
+    outline: 1px solid #9BE0C8;
+}
+
+.btn__plain:hover {
+    background-color: #F0FFF4;
+}
+
+.btn__plain:focus {
+    background-color: #F0FFF4;
+    border-color: #82CBB2;
+    outline: none;
+}
+
+.btn__plain:active {
+    background-color: #C6F6D5;
 }
