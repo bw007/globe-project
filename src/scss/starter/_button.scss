@@ -1,0 +1,28 @@
+.btn {
+  cursor: pointer;
+  outline: none;
+  color: $color-gray-900;
+  border: 2px solid transparent;
+  background-color: $color-transparent;
+  height: 40px;
+  padding: 7px 15px;
+  border-radius: 4px;
+  @include font($font-sm, auto, 500);
+  transition-property: $transition-property-common;
+  transition-duration: $transition-duration-fast;
+
+  &__success {
+    background-color: $color-green-400;
+    &:hover {
+      background-color: $color-green-300;
+    }
+
+    &:focus {
+      background-color: $color-green-200;
+    }
+
+    &:active {
+      background-color: $color-green-500;
+    }
+  }
+}
