@@ -1,15 +1,17 @@
 .btn {
   cursor: pointer;
-  outline: none;
   color: $color-gray-900;
-  border: 2px solid transparent;
+  border: 2px solid $color-white;
+  outline: 1px solid $color-white;
+  outline-offset: -2px;
   background-color: $color-transparent;
   height: 40px;
   padding: 7px 15px;
-  border-radius: 4px;
-  @include font($font-sm, auto, 500);
+  border-radius: 5px;
+  @include flex(space-between, center, $g: 7px);
+  @include font($font-sm, 1.5, 500);
   transition-property: $transition-property-common;
-  transition-duration: $transition-duration-fast;
+  transition-duration: $transition-duration-faster;
 
   &__success {
     background-color: $color-green-400;
@@ -19,10 +21,27 @@
 
     &:focus {
       background-color: $color-green-200;
+      border-color: $color-green-500;
     }
 
     &:active {
       background-color: $color-green-500;
+    }
+  }
+  &__plain {
+    outline: 1px solid $color-green-300;
+    &:hover {
+      background-color: $color-green-50;
+    }
+
+    &:focus {
+      background-color: $color-green-50;
+      border-color: $color-green-500;
+      outline: none;
+    }
+
+    &:active {
+      background-color: $color-green-100;
     }
   }
 }
