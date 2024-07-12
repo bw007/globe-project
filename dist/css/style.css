@@ -233,6 +233,10 @@ template {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: "Montserrat";
 }
@@ -259,8 +263,38 @@ body {
     transition-duration: 100ms;
 }
 
+.btn__small {
+    height: 32px;
+}
+
+.btn__large {
+    height: 48px;
+}
+
+.btn__dark {
+    background-color: #112211;
+    color: #FFFFFF;
+    border-width: 3px;
+    outline-offset: -3px;
+}
+
+.btn__dark:hover {
+    background-color: #2D3748;
+}
+
+.btn__dark:focus {
+    background-color: #112211;
+    border-color: #2D3748;
+}
+
+.btn__dark:active {
+    background-color: #2D3748;
+}
+
 .btn__success {
     background-color: #8DD3BB;
+    border-width: 3px;
+    outline-offset: -3px;
 }
 
 .btn__success:hover {
@@ -287,9 +321,34 @@ body {
 .btn__plain:focus {
     background-color: #F0FFF4;
     border-color: #82CBB2;
-    outline: none;
 }
 
 .btn__plain:active {
     background-color: #C6F6D5;
+}
+
+.btn__text {
+    border: none;
+    outline: none;
+}
+
+.btn__text:hover {
+    color: #9BE0C8;
+}
+
+.btn__text:focus {
+    color: #112211;
+}
+
+.btn__text:active {
+    color: #82CBB2;
+}
+
+.container {
+    width: 100%;
+    max-width: 1272px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }

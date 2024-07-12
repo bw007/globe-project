@@ -13,8 +13,39 @@
   transition-property: $transition-property-common;
   transition-duration: $transition-duration-faster;
 
+  &__small {
+    height: 32px;
+  }
+
+  &__large {
+    height: 48px;
+  }
+
+  &__dark {
+    background-color: $color-gray-900;
+    color: $color-white;
+    border-width: 3px;
+    outline-offset: -3px;
+
+    &:hover {
+      background-color: $color-gray-700;
+    }
+
+    &:focus {
+      background-color: $color-gray-900;
+      border-color: $color-gray-700;
+    }
+
+    &:active {
+      background-color: $color-gray-700;
+    }
+  }
+
   &__success {
     background-color: $color-green-400;
+    border-width: 3px;
+    outline-offset: -3px;
+
     &:hover {
       background-color: $color-green-300;
     }
@@ -28,8 +59,10 @@
       background-color: $color-green-500;
     }
   }
+
   &__plain {
     outline: 1px solid $color-green-300;
+
     &:hover {
       background-color: $color-green-50;
     }
@@ -37,11 +70,27 @@
     &:focus {
       background-color: $color-green-50;
       border-color: $color-green-500;
-      outline: none;
     }
 
     &:active {
       background-color: $color-green-100;
+    }
+  }
+
+  &__text {
+    border: none;
+    outline: none;
+
+    &:hover {
+      color: $color-green-300;
+    }
+
+    &:focus {
+      color: $color-gray-900;
+    }
+
+    &:active {
+      color: $color-green-500;
     }
   }
 }
