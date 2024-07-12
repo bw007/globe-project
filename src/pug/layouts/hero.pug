@@ -4,21 +4,22 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Globe
+    link(rel="stylesheet" href="./css/lib.min.css")
     link(rel="stylesheet" href="./css/style.min.css")
   body.wrapper
     header.header
       nav.header__nav.header-nav
         .header-nav__container.container
           .header-nav__links
-            a.header-nav__link(href="#")
-              img(src="./images/icons/airplane-dark.svg", alt="")
+            a.header-nav__link.text-sm(href="#")
+              img(src="./images/icons/airplane-dark.svg", alt="", draggable="false")
               | Find Flight
-            a.header-nav__link(href="#")
-              img(src="./images/icons/bed-dark.svg", alt="")
+            a.header-nav__link.text-sm(href="#")
+              img(src="./images/icons/bed-dark.svg", alt="", draggable="false")
               | Find Stays
           a.header-nav__logo(href="#")
-            img(src="./images/header/logo.svg", alt="Company logo")
+            img(src="./images/header/logo.svg", alt="Company logo", draggable="false", width="110", height="35")
           .header-nav__auth.header-auth
-            a.header-auth__btn.btn.btn__text(href="#") Login
-            a.header-auth__btn.btn.btn__dark(href="#") Sign up
+            a.header-nav__btn.btn.btn__text(href="#") Login
+            a.header-nav__btn.btn.btn__dark(href="#") Sign up
     block content
