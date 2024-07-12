@@ -1,0 +1,27 @@
+.header {
+  &__nav {
+    height: 90px;
+    width: 100%;
+    @include flex($y: center);
+    background-color: aliceblue
+  }
+}
+
+.header-nav {
+  &__container {
+    @include flex(space-between, center);
+  }
+  &__links {
+    @include flex($y: center, $g: 30px);
+  }
+  &__link {
+    @include flex($y: center, $g: 5px);
+  }
+  &__logo {
+    
+  }
+  &__auth {
+    @include flex($y: center, $g: 10px);
+  }
+  &__btn {}
+}
