@@ -135,19 +135,20 @@ $border-1px: 1px solid;
 $border-2px: 2px solid;
 $border-4px: 4px solid;
 $border-8px: 8px solid;
-$font-xs: 0.75rem;
-$font-sm: 0.875rem;
-$font-md: 1rem;
-$font-lg: 1.125rem;
-$font-xl: 1.25rem;
-$font-2xl: 1.5rem;
-$font-3xl: 1.875rem;
-$font-4xl: 2.25rem;
-$font-5xl: 3rem;
-$font-6xl: 3.75rem;
-$font-7xl: 4.5rem;
-$font-8xl: 6rem;
-$font-9xl: 8rem;
+
+
+$text-ss: 1rem; // 10px
+$text-xs: 1.2rem; // 12px
+$text-sm: 1.4rem; // 14px
+$text-md: 1.6rem; // 16px
+$text-lg: 1.8rem; // 18px
+$text-xl: 2rem; // 20px
+$text-2xl: 2.4rem; // 24px
+$text-3xl: 3.2rem; // 32px 
+$text-4xl: 3.6rem; // 36px
+$text-5xl: 4rem; // 40px
+
+
 $font-hairline: 100;
 $font-thin: 200;
 $font-light: 300;
@@ -157,12 +158,16 @@ $font-semibold: 600;
 $font-bold: 700;
 $font-extrabold: 800;
 $font-black: 900;
+
+
 $letterSpacings-tighter: -0.05em;
 $letterSpacings-tight: -0.025em;
 $letterSpacings-normal: 0;
 $letterSpacings-wide: 0.025em;
 $letterSpacings-wider: 0.05em;
 $letterSpacings-widest: 0.1em;
+
+
 $line-height-3: .75rem;
 $line-height-4: 1rem;
 $line-height-5: 1.25rem;
