@@ -9,7 +9,7 @@
   padding: 7px 15px;
   border-radius: 5px;
   @include flex(space-between, center, $g: 7px);
-  @include font($font-sm, 1.5, 500);
+  @include font($text-sm, 1.5, 500);
   transition-property: $transition-property-common;
   transition-duration: $transition-duration-faster;
 

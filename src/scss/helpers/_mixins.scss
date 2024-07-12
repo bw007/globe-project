@@ -5,7 +5,7 @@
   flex-direction: $fd;
   gap: $g;
 }
-@mixin font($size: 1rem, $line: 1.15, $weight: normal) {
+@mixin font($size: 1.6rem, $line: 1.15, $weight: normal) {
   font-size: $size;
   line-height: $line;
   font-weight: $weight;

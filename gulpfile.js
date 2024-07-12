@@ -18,7 +18,7 @@ const tsProject = ts.createProject("tsconfig.json");
 const path = {
   src: {
     pug: "src/pug/pages/**/*.pug",
-    scss: "src/scss/style.scss",
+    scss: "src/scss/*.scss",
     ts: "src/ts/**/*.ts",
     img: "src/images/**/*.{jpg,png,svg,gif,ico}",
     font: "src/fonts/**/*"
