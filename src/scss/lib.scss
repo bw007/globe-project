@@ -869,30 +869,30 @@
 }
 
 // FONT WEIGHT
-.font-100 {
-  font-weight: $font-hairline;
+.font-thin {
+  font-weight: 100;
 }
-.font-200 {
-  font-weight: $font-thin;
+.font-extralight {
+  font-weight: 200;
 }
-.font-300 {
-  font-weight: $font-light;
+.font-light {
+  font-weight: 300;
 }
-.font-400 {
-  font-weight: $font-normal;
+.font-regular {
+  font-weight: 400;
 }
-.font-500 {
-  font-weight: $font-medium;
+.font-medium {
+  font-weight: 500;
 }
-.font-600 {
-  font-weight: $font-semibold;
+.font-semibold {
+  font-weight: 600;
 }
-.font-700 {
-  font-weight: $font-bold;
+.font-bold {
+  font-weight: 700;
 }
-.font-800 {
-  font-weight: $font-extrabold;
+.font-extrabold {
+  font-weight: 800;
 }
-.font-900 {
-  font-weight: $font-black;
+.font-black {
+  font-weight: 900;
 }
