@@ -11,7 +11,7 @@
     <header class="header">
       <nav class="header-nav flex items-center w-full">
         <div class="header-nav__container container flex justify-between items-center w-full h-full">
-          <div class="header-nav__links flex items-center gap-12 h-full"><a class="header-nav__link header-nav__link--active h-full flex items-center gap-2 text-sm font-semibold" href="index.html"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 text-sm font-semibold" href="stays.html"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div><a class="header-nav__logo flex items-center" href="#"><img src="./images/header/logo.svg" alt="Company logo" draggable="false" width="110" height="35"></a>
+          <div class="header-nav__links flex items-center gap-12 h-full"><a class="header-nav__link header-nav__link--active h-full flex items-center gap-2 text-sm font-semibold" href="index.html"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 text-sm font-semibold" href="stays.html"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div><a class="header-nav__logo flex items-center" href="index.html"><img src="./images/header/logo.svg" alt="Company logo" draggable="false" width="110" height="35"></a>
           <div class="header-nav__auth header-auth flex items-center gap-4"><a class="header-nav__btn btn btn__text" href="#">Login</a><a class="header-nav__btn btn btn__dark" href="#">Sign up</a></div>
         </div>
       </nav>
@@ -19,17 +19,39 @@
         <div class="header-hero__container container h-full relative">
           <h1 class="header-hero__title font-bold mb-8">Make your travel whishlist, we’ll do the rest</h1>
           <p class="header-hero__caption font-regular text-xl">Special offers to suit your plan</p>
-          <div class="header-hero__interaction-panel interaction-panel absolute">
-            <h3 class="interaction-panel__title">Where are you flying?</h3>
-            <form class="interaction-panel__form form">
-              <div class="form__input-group">
-                <input class="form__input">
+          <div class="header-hero__interaction-panel interaction-panel absolute flex flex-col gap-12 px-24 py-32">
+            <h3 class="interaction-panel__title text-xl font-semibold">Where are you flying?</h3>
+            <form class="interaction-panel__form flex flex-col gap-12">
+              <div class="interaction-panel__form-inner flex justify-between items-center">
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">From - To</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value=""/><img src="./images/icons/plus.svg" alt=""/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">From - To</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value=""/><img src="./images/icons/plus.svg" alt=""/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">From - To</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value=""/><img src="./images/icons/plus.svg" alt=""/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">From - To</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value=""/><img src="./images/icons/plus.svg" alt=""/>
+                  </div>
+                </fieldset>
               </div>
-              <select>
-                <option>Salom</option>
-                <option>Salom</option>
-              </select>
-              <input>
+              <div class="interaction-panel__form-submit flex items-center justify-end gap-4 w-full">
+                <button class="btn btn__text"><img src="./images/icons/plus.svg">Add Promo Code</button>
+                <button class="btn btn__success"><img src="./images/icons/plus.svg">Show Filghts</button>
+              </div>
             </form>
           </div>
         </div>
