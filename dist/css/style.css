@@ -323,6 +323,7 @@ acronym {
 
 a {
     text-decoration: none;
+    color: #112211;
 }
 
 body {
@@ -335,8 +336,8 @@ body {
 .btn {
     cursor: pointer;
     color: #112211;
-    border: 2px solid #FFFFFF;
-    outline: 1px solid #FFFFFF;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
     outline-offset: -2px;
     background-color: transparent;
     height: 40px;
@@ -367,6 +368,7 @@ body {
     color: #FFFFFF;
     border-width: 3px;
     outline-offset: -3px;
+    border-color: transparent;
 }
 
 .btn__dark:hover {
@@ -376,6 +378,7 @@ body {
 .btn__dark:focus {
     background-color: #112211;
     border-color: #2D3748;
+    outline-color: #FFFFFF;
 }
 
 .btn__dark:active {
@@ -456,27 +459,31 @@ body {
 }
 
 .header-nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .header-nav__links {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
     gap: 30px;
+    height: 100%;
 }
 
 .header-nav__link {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+    height: 100%;
+    border-bottom: 5px solid #8DD3BB;
     gap: 5px;
+}
+
+.header-nav__link:hover {
+    color: #82CBB2;
+}
+
+.header-nav__link:focus {
+    color: #112211;
+}
+
+.header-nav__link:active {
+    color: #82CBB2;
 }
 
 .header-nav__auth {
