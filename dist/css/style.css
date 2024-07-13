@@ -46,6 +46,14 @@
   font-display: swap;
 }
 
+@font-face {
+    font-family: "TradeGothic LT Extended";
+  src: url("../fonts/TradeGothicLT-Extended.woff2") format("woff2"), url("../fonts/TradeGothicLT-Extended.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -330,19 +338,23 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.15;
 }
 
 .btn {
     cursor: pointer;
     color: #112211;
-    border: 2px solid transparent;
-    outline: 1px solid transparent;
-    outline-offset: -2px;
     background-color: transparent;
     height: 40px;
     padding: 7px 15px;
     border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -366,9 +378,6 @@ body {
 .btn__dark {
     background-color: #112211;
     color: #FFFFFF;
-    border-width: 3px;
-    outline-offset: -3px;
-    border-color: transparent;
 }
 
 .btn__dark:hover {
@@ -377,8 +386,7 @@ body {
 
 .btn__dark:focus {
     background-color: #112211;
-    border-color: #2D3748;
-    outline-color: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .btn__dark:active {
@@ -387,8 +395,6 @@ body {
 
 .btn__success {
     background-color: #8DD3BB;
-    border-width: 3px;
-    outline-offset: -3px;
 }
 
 .btn__success:hover {
@@ -396,8 +402,8 @@ body {
 }
 
 .btn__success:focus {
-    background-color: #A5EBD3;
-    border-color: #82CBB2;
+    background-color: #8DD3BB;
+    box-shadow: 0 0 0 3px rgba(130, 203, 178, 0.35);
 }
 
 .btn__success:active {
@@ -405,25 +411,20 @@ body {
 }
 
 .btn__plain {
-    outline: 1px solid #9BE0C8;
+    border-color: #9BE0C8;
 }
 
 .btn__plain:hover {
-    background-color: #F0FFF4;
+    border-color: #C6F6D5;
 }
 
 .btn__plain:focus {
-    background-color: #F0FFF4;
-    border-color: #82CBB2;
+    border-color: #C6F6D5;
+    box-shadow: 0 0 0 2px #C6F6D5;
 }
 
 .btn__plain:active {
-    background-color: #C6F6D5;
-}
-
-.btn__text {
-    border: none;
-    outline: none;
+    border-color: #9BE0C8;
 }
 
 .btn__text:hover {
@@ -438,6 +439,22 @@ body {
     color: #82CBB2;
 }
 
+.input-fieldset {
+    border: 1px solid #79747e;
+    border-radius: 4px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.input-fieldset legend {
+    color: #797979;
+}
+
+.input-wrap input {
+    border: none;
+    outline: none;
+}
+
 .container {
     width: 100%;
     max-width: 1272px;
@@ -447,31 +464,37 @@ body {
     margin-left: auto;
 }
 
-.header__nav {
+.header__hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__hero--flight {
+    background-image: linear-gradient(90deg, rgba(19, 24, 66, 0.75), rgba(0, 0, 0, 0.1)), url("../images/header/bg-2.jpg");
+    background-position: top;
+}
+
+.header__hero--stays {
+    background-image: linear-gradient(90deg, rgba(19, 24, 66, 0.75), rgba(0, 0, 0, 0.1)), url("../images/header/bg-3.jpg");
+    background-position: center;
+}
+
+.header-nav {
     height: 90px;
+}
+
+.header-nav__link--active {
+    position: relative;
+}
+
+.header-nav__link--active::after {
+    display: inline-block;
+    content: "";
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 0;
-    background-color: aliceblue;
-}
-
-.header-nav__container {
-    width: 100%;
-    height: 100%;
-}
-
-.header-nav__links {
-    gap: 30px;
-    height: 100%;
-}
-
-.header-nav__link {
-    height: 100%;
-    border-bottom: 5px solid #8DD3BB;
-    gap: 5px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    background-color: #8DD3BB;
 }
 
 .header-nav__link:hover {
@@ -486,10 +509,43 @@ body {
     color: #82CBB2;
 }
 
-.header-nav__auth {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
+.header-hero__container {
+    padding-top: 80px;
+    padding-bottom: 232px;
+}
+
+.header-hero__title, .header-hero__caption {
+    color: #FFFFFF;
+}
+
+.header-hero__title {
+    font-family: "TradeGothic LT Extended";
+    font-size: 45px;
+    line-height: 1.4;
+    max-width: 440px;
+}
+
+.header-hero__caption {
+    line-height: 1.4;
+}
+
+.header-hero__interaction-panel {
+    background-color: #FFFFFF;
+}
+
+.interaction-panel {
+    left: 2rem;
+    right: 2rem;
+    border-radius: 16px;
+}
+
+select {
+    width: 140px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../images/icons/swap-horizontal.svg");
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
 }

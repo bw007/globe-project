@@ -5289,3 +5289,81 @@
 .font-black {
     font-weight: 900;
 }
+
+/* Percentage-based and other widths */
+.w-auto {
+    width: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-screen {
+    width: 100vw;
+ /* Viewport width */
+}
+
+.w-min {
+    width: -moz-min-content;
+    width: min-content;
+}
+
+.w-max {
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+/* Percentage-based and other heights */
+.h-auto {
+    height: auto;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-screen {
+    height: 100vw;
+ /* Viewport height */
+}
+
+.h-min {
+    height: -moz-min-content;
+    height: min-content;
+}
+
+.h-max {
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.static {
+    position: static;
+}
