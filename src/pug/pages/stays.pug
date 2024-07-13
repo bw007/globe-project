@@ -1,0 +1,18 @@
+extends ../layouts/hero.pug
+
+block content
+  header.header
+    include ../components/_navbar.pug
+    .header__hero.header__hero--stays.header-hero
+      .header-hero__container.container.h-full.relative
+        h1.header-hero__title.font-bold.mb-8 Make your travel whishlist, we’ll do the rest
+        p.header-hero__caption.font-regular.text-xl Special offers to suit your plan
+        .header-hero__interaction-panel.interaction-panel.absolute
+          h3.interaction-panel__title Where are you flying?
+          form.interaction-panel__form.form
+            .form__input-group
+              input.form__input
+            select
+              option Salom
+              option Salom
+            input
