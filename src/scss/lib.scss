@@ -4,22 +4,22 @@
   .m {
     &l {
       &-#{$i} {
-        margin-left: $i+px;
+        margin-left: $i + px;
       }
     }
     &r {
       &-#{$i} {
-        margin-right: $i+px;
+        margin-right: $i + px;
       }
     }
     &t {
       &-#{$i} {
-        margin-top: $i+px;
+        margin-top: $i + px;
       }
     }
     &b {
       &-#{$i} {
-        margin-bottom: $i+px;
+        margin-bottom: $i + px;
       }
     }
   }
@@ -29,22 +29,22 @@
   .p {
     &l {
       &-#{$i} {
-        padding-left: $i+px;
+        padding-left: $i + px;
       }
     }
     &r {
       &-#{$i} {
-        padding-right: $i+px;
+        padding-right: $i + px;
       }
     }
     &t {
       &-#{$i} {
-        padding-top: $i+px;
+        padding-top: $i + px;
       }
     }
     &b {
       &-#{$i} {
-        padding-bottom: $i+px;
+        padding-bottom: $i + px;
       }
     }
   }
@@ -54,14 +54,14 @@
   .p {
     &x {
       &-#{$i} {
-        padding-left: $i+px;
-        padding-right: $i+px;
+        padding-left: $i + px;
+        padding-right: $i + px;
       }
     }
     &y {
       &-#{$i} {
-        padding-top: $i+px;
-        padding-bottom: $i+px;
+        padding-top: $i + px;
+        padding-bottom: $i + px;
       }
     }
   }
@@ -835,7 +835,6 @@
   grid-auto-flow: column dense;
 }
 
-
 // FONT SIZES
 .text-ss {
   font-size: $text-ss;
@@ -895,4 +894,71 @@
 }
 .font-black {
   font-weight: 900;
+}
+
+/* Percentage-based and other widths */
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw; /* Viewport width */
+}
+
+.w-min {
+  width: min-content;
+}
+
+.w-max {
+  width: max-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+/* Percentage-based and other heights */
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vw; /* Viewport height */
+}
+
+.h-min {
+  height: min-content;
+}
+
+.h-max {
+  height: max-content;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+// Position
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.sticky {
+  position: sticky;
+}
+.static {
+  position: static;
 }

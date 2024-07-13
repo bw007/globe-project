@@ -1,13 +1,15 @@
 .btn {
   cursor: pointer;
   color: $color-gray-900;
-  border: 2px solid transparent;
-  outline: 1px solid transparent;
-  outline-offset: -2px;
   background-color: $color-transparent;
   height: 40px;
   padding: 7px 15px;
   border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
   @include flex(space-between, center, $g: 7px);
   @include font($text-sm, 1.5, 500);
   transition-property: $transition-property-common;
@@ -24,18 +26,13 @@
   &__dark {
     background-color: $color-gray-900;
     color: $color-white;
-    border-width: 3px;
-    outline-offset: -3px;
-    border-color: transparent;
-
     &:hover {
       background-color: $color-gray-700;
     }
 
     &:focus {
       background-color: $color-gray-900;
-      border-color: $color-gray-700;
-      outline-color: $color-white;
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2)
     }
 
     &:active {
@@ -45,16 +42,14 @@
 
   &__success {
     background-color: $color-green-400;
-    border-width: 3px;
-    outline-offset: -3px;
 
     &:hover {
       background-color: $color-green-300;
     }
 
     &:focus {
-      background-color: $color-green-200;
-      border-color: $color-green-500;
+      background-color: $color-green-400;
+      box-shadow: 0 0 0 3px rgba(130, 203, 178, 0.35);
     }
 
     &:active {
@@ -63,26 +58,23 @@
   }
 
   &__plain {
-    outline: 1px solid $color-green-300;
+    border-color: $color-green-300;
 
     &:hover {
-      background-color: $color-green-50;
+      border-color: $color-green-100;
     }
 
     &:focus {
-      background-color: $color-green-50;
-      border-color: $color-green-500;
+      border-color: $color-green-100;
+      box-shadow: 0 0 0 2px $color-green-100;
     }
 
     &:active {
-      background-color: $color-green-100;
+      border-color: $color-green-300;
     }
   }
 
   &__text {
-    border: none;
-    outline: none;
-
     &:hover {
       color: $color-green-300;
     }
