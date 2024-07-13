@@ -1,8 +1,8 @@
 .btn {
   cursor: pointer;
   color: $color-gray-900;
-  border: 2px solid $color-white;
-  outline: 1px solid $color-white;
+  border: 2px solid transparent;
+  outline: 1px solid transparent;
   outline-offset: -2px;
   background-color: $color-transparent;
   height: 40px;
@@ -26,6 +26,7 @@
     color: $color-white;
     border-width: 3px;
     outline-offset: -3px;
+    border-color: transparent;
 
     &:hover {
       background-color: $color-gray-700;
@@ -34,6 +35,7 @@
     &:focus {
       background-color: $color-gray-900;
       border-color: $color-gray-700;
+      outline-color: $color-white;
     }
 
     &:active {
