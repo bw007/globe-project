@@ -9,15 +9,15 @@ html(lang="en")
   body.wrapper
     header.header
       nav.header__nav.header-nav
-        .header-nav__container.container
-          .header-nav__links
-            a.header-nav__link.text-sm(href="#")
+        .header-nav__container.container.flex.justify-between.items-center
+          .header-nav__links.flex.items-center
+            a.header-nav__link.flex.items-center.text-sm.font-semibold(href="#")
               img(src="./images/icons/airplane-dark.svg", alt="", draggable="false")
               | Find Flight
-            a.header-nav__link.text-sm(href="#")
+            a.header-nav__link.flex.items-center.text-sm.font-semibold(href="#")
               img(src="./images/icons/bed-dark.svg", alt="", draggable="false")
               | Find Stays
-          a.header-nav__logo(href="#")
+          a.header-nav__logo.flex.items-center(href="#")
             img(src="./images/header/logo.svg", alt="Company logo", draggable="false", width="110", height="35")
           .header-nav__auth.header-auth
             a.header-nav__btn.btn.btn__text(href="#") Login
