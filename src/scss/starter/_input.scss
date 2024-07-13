@@ -1,0 +1,15 @@
+.input-fieldset {
+  border: 1px solid #79747e;
+  border-radius: 4px;
+  width: fit-content;
+  legend {
+    color: #797979;
+  }
+}
+
+.input-wrap {
+  input {
+    border: none;
+    outline: none;
+  }
+}
