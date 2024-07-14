@@ -1,0 +1,28 @@
+.input-fieldset {
+  border: 1px solid #79747e;
+  border-radius: 4px;
+  width: fit-content;
+
+  legend {
+    color: #797979;
+  }
+
+  input,
+  select {
+    border: none;
+    outline: none;
+    line-height: 1.5;
+  }
+
+  select {
+    min-width: 140px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $color-transparent;
+    background-image: url("../images/icons/chevron-down.svg");
+    background-position: calc(100% - 10px) 10px;
+    background-repeat: no-repeat;
+  }
+}
