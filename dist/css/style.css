@@ -339,6 +339,7 @@ body {
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.15;
+    background-color: #FAFAFA;
 }
 
 .icon-sm {
@@ -462,9 +463,23 @@ body {
     color: #797979;
 }
 
-.input-wrap input {
+.input-fieldset input,
+.input-fieldset select {
     border: none;
     outline: none;
+    line-height: 1.5;
+}
+
+.input-fieldset select {
+    min-width: 140px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: url("../images/icons/chevron-down.svg");
+    background-position: calc(100% - 10px) 10px;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -541,23 +556,87 @@ body {
     line-height: 1.4;
 }
 
-.header-hero__interaction-panel {
-    background-color: #FFFFFF;
-}
-
 .interaction-panel {
     left: 2rem;
     right: 2rem;
+    bottom: -33%;
     border-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(141, 211, 187, 0.0823529412);
+    background-color: #FFFFFF;
 }
 
-select {
-    width: 140px;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url("../images/icons/swap-horizontal.svg");
-    background-position: calc(100% - 10px) center;
-    background-repeat: no-repeat;
+.interaction-panel__form-inner {
+    gap: 24px !important;
+}
+
+.places__map {
+    height: 485px;
+    background-color: #8DD3BB;
+}
+
+.places__inner {
+    position: relative;
+    background-image: url("../images/flight/bg.png");
+    background-size: cover;
+}
+
+.places__point {
+    position: relative;
+    position: absolute;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.places__point .arrow {
+    position: absolute;
+}
+
+.places__point:first-child {
+    top: 7rem;
+    left: 18rem;
+}
+
+.places__point:first-child .arrow {
+    bottom: -3.8rem;
+    right: 3.5rem;
+}
+
+.places__point:nth-child(2) {
+    top: 9rem;
+    right: 18rem;
+}
+
+.places__point:nth-child(2) .arrow {
+    bottom: -5.4rem;
+    right: 10rem;
+}
+
+.places__point:nth-child(3) {
+    bottom: 14.2rem;
+    left: 36.8rem;
+}
+
+.places__point:nth-child(3) .arrow {
+    bottom: -3.5rem;
+    right: 11rem;
+}
+
+.places__point:nth-child(4) {
+    bottom: 15.5rem;
+    left: 67rem;
+}
+
+.places__point:nth-child(4) .arrow {
+    top: -3.3rem;
+    right: 11rem;
+}
+
+.places__point:nth-child(5) {
+    bottom: 17.5rem;
+    right: 3.6rem;
+}
+
+.places__point:nth-child(5) .arrow {
+    bottom: -3.3rem;
+    right: 9.8rem;
 }

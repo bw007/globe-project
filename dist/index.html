@@ -26,25 +26,28 @@
                 <fieldset class="input-fieldset">
                   <legend class="text-sm font-regular ml-10 px-5">From - To</legend>
                   <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
-                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="Lahore - Karachi"/><img src="./images/icons/plus.svg" alt=""/>
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="Lahore - Karachi"/><img class="icon-sms" src="./images/icons/swap-horizontal.svg" alt="" draggable="false"/>
                   </div>
                 </fieldset>
                 <fieldset class="input-fieldset">
                   <legend class="text-sm font-regular ml-10 px-5">Trip</legend>
-                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
-                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="Return"/><img src="./images/icons/plus.svg" alt=""/>
+                  <div class="select-wrap flex items-center justify-between">
+                    <select class="text-md font-regular pr-15 px-15 pt-10 pb-15" value="Return">
+                      <option value="Retu">Return</option>
+                      <option value="Borisj">Borish</option>
+                    </select>
                   </div>
                 </fieldset>
                 <fieldset class="input-fieldset">
                   <legend class="text-sm font-regular ml-10 px-5">Depart- Return</legend>
                   <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
-                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="07 Nov 22 - 13 Nov 22"/><img src="./images/icons/plus.svg" alt=""/>
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="07 Nov 22 - 13 Nov 22"/><img class="icon-sms" src="./images/icons/calendar-dark.svg" alt="" draggable="false"/>
                   </div>
                 </fieldset>
                 <fieldset class="input-fieldset">
                   <legend class="text-sm font-regular ml-10 px-5">Passenger - Class</legend>
                   <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
-                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="1 Passenger, Economy"/><img src="./images/icons/plus.svg" alt=""/>
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="1 Passenger, Economy"/><img class="icon-sms" src="./images/icons/breifcase-dark.svg" alt="" draggable="false"/>
                   </div>
                 </fieldset>
               </div>
@@ -57,5 +60,50 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="space-y-26"></section>
+      <section class="places mb-30">
+        <div class="container">
+          <div class="section-header flex items-center justify-between mb-24">
+            <div class="section-header__text flex flex-col gap-y-8">
+              <h1 class="section-header__tille text-3xl font-semibold">Let's go places together</h1>
+              <p class="section-header__desc text-md font-regular">Discover the latest offers and news and start planning your next trip with us.</p>
+            </div>
+            <button class="btn btn__plain">See All</button>
+          </div>
+        </div>
+        <div class="places__map">
+          <div class="container h-full">
+            <div class="places__inner h-full">
+              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-1.png" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
+                </div><img class="arrow" src="./images/flight/p-1.svg" alt="" draggable="false">
+              </div>
+              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-2.png" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
+                </div><img class="arrow" src="./images/flight/p-2.svg" alt="" draggable="false">
+              </div>
+              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-3.png" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
+                </div><img class="arrow" src="./images/flight/p-3.svg" alt="" draggable="false">
+              </div>
+              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-4.png" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
+                </div><img class="arrow" src="./images/flight/p-4.svg" alt="" draggable="false">
+              </div>
+              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-5.png" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
+                </div><img class="arrow" src="./images/flight/p-5.svg" alt="" draggable="false">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
