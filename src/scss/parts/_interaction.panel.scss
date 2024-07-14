@@ -1,0 +1,16 @@
+.interaction-panel {
+  left: 2rem;
+  right: 2rem;
+  bottom: -33%;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px 0 #8DD3BB15;
+  background-color: $color-white;  
+  &__title {
+  }
+  &__form {
+    
+  }
+  &__form-inner {
+    gap: 24px !important;
+  }
+}
