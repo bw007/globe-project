@@ -67,6 +67,21 @@
   }
 }
 
+@for $i from 1 through 40 {
+  .space {
+    &-x {
+      &-#{$i} {
+        width: $i*10px;
+      }
+    }
+    &-y {
+      &-#{$i} {
+        height: $i*10px;
+      }
+    }
+  }
+}
+
 // FLEXBOX
 /* Container va Display */
 .flex {
@@ -961,4 +976,9 @@
 }
 .static {
   position: static;
+}
+
+// Color
+.bg-white {
+  background-color: $color-white;
 }
