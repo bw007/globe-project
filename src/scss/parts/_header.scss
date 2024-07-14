@@ -70,37 +70,6 @@
   &__caption {
     line-height: 1.4;
   }
-  &__interaction-panel {
-    background-color: $color-white;
-    // width: 100%;
-    
-  }
 }
 
-.interaction-panel {
-  left: 2rem;
-  right: 2rem;
-  border-radius: 16px;
-  &__title {
-  }
-  &__form {
-  }
-  &__form-inner {
-    
-  }
-}
 
-select {
-  width: 140px;
-  // padding: 15px 10px;
-  // padding-right: 40px;
-  // margin: 50px;
-  // display: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("../images/icons/swap-horizontal.svg");
-  background-position: calc(100% - 10px) center;
-  background-repeat: no-repeat;
-}
