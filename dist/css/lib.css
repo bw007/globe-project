@@ -5691,3 +5691,43 @@
 .bg-white {
     background-color: #FFFFFF;
 }
+
+.text-dark-gray {
+    color: #112211;
+}
+
+.rounded-none {
+    border-radius: 0px;
+}
+
+.rounded-sm {
+    border-radius: 0.2rem;
+}
+
+.rounded {
+    border-radius: 0.4rem;
+}
+
+.rounded-md {
+    border-radius: 0.6rem;
+}
+
+.rounded-lg {
+    border-radius: 0.8rem;
+}
+
+.rounded-xl {
+    border-radius: 1.2rem;
+}
+
+.rounded-2xl {
+    border-radius: 1.6rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.card-shadow {
+    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.0196078431);
+}

@@ -62,45 +62,75 @@
     </header>
     <main class="main">
       <section class="space-y-26"></section>
-      <section class="places mb-30">
-        <div class="container">
-          <div class="section-header flex items-center justify-between mb-24">
+      <section class="places mb-60">
+        <div class="places__container container">
+          <div class="section-header flex items-center justify-between mb-30">
             <div class="section-header__text flex flex-col gap-y-8">
-              <h1 class="section-header__tille text-3xl font-semibold">Let's go places together</h1>
-              <p class="section-header__desc text-md font-regular">Discover the latest offers and news and start planning your next trip with us.</p>
+              <h1 class="section-header__tille text-3xl font-semibold">Plan your perfect trip</h1>
+              <p class="section-header__desc text-md font-regular">Search Flights &amp; Places Hire to our most popular destinations</p>
+            </div>
+            <button class="btn btn__plain">See more places</button>
+          </div>
+          <div class="places__cards grid grid-cols-3 gap-12">
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-1.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">Istanbul, Turkey</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-2.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">Sydney, Australia</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-3.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">Baku, Azerbaijan</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-4.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">Malé, Maldives</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-5.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">Paris, France</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-6.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">New York, US</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-7.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">London, UK</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-8.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">Tokyo, Japan</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-9.png" alt=""/>
+              <div class="flex flex-col gap-3 text-dark-gray">
+                <p class="text-md font-semibold">Dubai, UAE</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="travel pt-40 bg-white">
+        <div class="travel__container container">
+          <div class="section-header flex items-center justify-between mb-30">
+            <div class="section-header__text flex flex-col gap-y-8">
+              <h1 class="section-header__tille text-3xl font-semibold">Fall into travel</h1>
+              <p class="section-header__desc text-md font-regular">Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your destination.</p>
             </div>
             <button class="btn btn__plain">See All</button>
           </div>
-        </div>
-        <div class="places__map">
-          <div class="container h-full">
-            <div class="places__inner h-full">
-              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-1.png" alt="">
-                <div class="flex flex-col">
-                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
-                </div><img class="arrow" src="./images/flight/p-1.svg" alt="" draggable="false">
-              </div>
-              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-2.png" alt="">
-                <div class="flex flex-col">
-                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
-                </div><img class="arrow" src="./images/flight/p-2.svg" alt="" draggable="false">
-              </div>
-              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-3.png" alt="">
-                <div class="flex flex-col">
-                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
-                </div><img class="arrow" src="./images/flight/p-3.svg" alt="" draggable="false">
-              </div>
-              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-4.png" alt="">
-                <div class="flex flex-col">
-                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
-                </div><img class="arrow" src="./images/flight/p-4.svg" alt="" draggable="false">
-              </div>
-              <div class="places__point flex items-center gap-3 bg-white py-4 pr-10 pl-4"><img src="./images/flight/place-5.png" alt="">
-                <div class="flex flex-col">
-                  <h4 class="text-ss font-bold">James Doe</h4><span class="text-ss font-regular">Boarding Pass N'123</span>
-                </div><img class="arrow" src="./images/flight/p-5.svg" alt="" draggable="false">
-              </div>
-            </div>
+          <div class="travel__cards grid grid-cols-4">
+            <div class="travel-card" style="background-image: url(../images/flight/t-1.png)"></div>
           </div>
         </div>
       </section>
