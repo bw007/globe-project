@@ -911,6 +911,138 @@
   font-weight: 900;
 }
 
+// Font family
+.font-trade-gothic {
+  font-family: "TradeGothic LT Extended";
+}
+
+// Text
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+// Overflow
+/* CSS dosyası: styles.css */
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+/* Whitespace normal */
+.whitespace-normal {
+  white-space: normal;
+}
+
+/* Whitespace nowrap */
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+/* Whitespace pre */
+.whitespace-pre {
+  white-space: pre;
+}
+
+/* Whitespace pre-line */
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+/* Whitespace pre-wrap */
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+/* Whitespace break spaces */
+.whitespace-break-spaces {
+  white-space: break-spaces;
+}
+
+/* z-index: 0 */
+.z-0 {
+  z-index: 0;
+}
+
+/* z-index: 10 */
+.z-10 {
+  z-index: 10;
+}
+
+/* z-index: 20 */
+.z-20 {
+  z-index: 20;
+}
+
+/* z-index: 30 */
+.z-30 {
+  z-index: 30;
+}
+
+/* z-index: 40 */
+.z-40 {
+  z-index: 40;
+}
+
+/* z-index: 50 */
+.z-50 {
+  z-index: 50;
+}
+
+/* z-index: auto */
+.z-auto {
+  z-index: auto;
+}
+
+
+
 /* Percentage-based and other widths */
 .w-auto {
   width: auto;
@@ -934,6 +1066,13 @@
 
 .w-fit {
   width: fit-content;
+}
+
+.max-w-fit {
+  max-width: fit-content;
+}
+.min-w-fit {
+  min-width: fit-content;
 }
 
 /* Percentage-based and other heights */
@@ -982,6 +1121,12 @@
 .bg-white {
   background-color: $color-white;
 }
+.bg-success {
+  background-color: $color-green-400;
+}
+.text-white {
+  color: $color-white;
+}
 .text-dark-gray {
   color: $color-gray-900;
 }
@@ -1008,6 +1153,9 @@
 .rounded-2xl {
   border-radius: 1.6rem;
 }
+.rounded-20 {
+  border-radius: 2rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1015,3 +1163,4 @@
 .card-shadow {
   box-shadow: 0px 4px 16px 0px #11221105;
 }
+
