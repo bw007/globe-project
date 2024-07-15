@@ -1,0 +1,9 @@
+mixin flight-card(src="", title="", caption="", price="", link="")
+  .flight-card.flex.flex-col.items-center.justify-end.gap-6.rounded-2xl.px-24.py-24.relative
+    .flight-card__bg.absolute.z-0(style=`background-image: url(${src})`)
+    .flex.items-center.justify-between.w-full.z-10
+      .flex.flex-col
+        h3.text-2xl.font-semibold.text-white= title
+        span.text-sm.text-white= caption
+      h3.text-2xl.font-semibold.text-white.whitespace-nowrap= price
+    a.btn.btn__success.btn__large.w-full.z-10(href=link) Book a Hotel
