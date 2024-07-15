@@ -24,39 +24,21 @@ block content
                 | Show Filghts
   main.main
     section.space-y-26
-    section.places.mb-30
-      .container
-        +section-header("Let's go places together", "Discover the latest offers and news and start planning your next trip with us.", "See All")
-      .places__map
-        .container.h-full
-          .places__inner.h-full
-            .places__point.flex.items-center.gap-3.bg-white.py-4.pr-10.pl-4
-              img(src="./images/flight/place-1.png", alt="")
-              .flex.flex-col
-                h4.text-ss.font-bold James Doe
-                span.text-ss.font-regular Boarding Pass N'123
-              img.arrow(src="./images/flight/p-1.svg", alt="", draggable="false")
-            .places__point.flex.items-center.gap-3.bg-white.py-4.pr-10.pl-4
-                img(src="./images/flight/place-2.png", alt="")
-                .flex.flex-col
-                  h4.text-ss.font-bold James Doe
-                  span.text-ss.font-regular Boarding Pass N'123
-                img.arrow(src="./images/flight/p-2.svg", alt="", draggable="false")
-            .places__point.flex.items-center.gap-3.bg-white.py-4.pr-10.pl-4
-                img(src="./images/flight/place-3.png", alt="")
-                .flex.flex-col
-                  h4.text-ss.font-bold James Doe
-                  span.text-ss.font-regular Boarding Pass N'123
-                img.arrow(src="./images/flight/p-3.svg", alt="", draggable="false")
-            .places__point.flex.items-center.gap-3.bg-white.py-4.pr-10.pl-4
-                img(src="./images/flight/place-4.png", alt="")
-                .flex.flex-col
-                  h4.text-ss.font-bold James Doe
-                  span.text-ss.font-regular Boarding Pass N'123
-                img.arrow(src="./images/flight/p-4.svg", alt="", draggable="false")
-            .places__point.flex.items-center.gap-3.bg-white.py-4.pr-10.pl-4
-                img(src="./images/flight/place-5.png", alt="")
-                .flex.flex-col
-                  h4.text-ss.font-bold James Doe
-                  span.text-ss.font-regular Boarding Pass N'123
-                img.arrow(src="./images/flight/p-5.svg", alt="", draggable="false")
+    section.places.mb-60
+      .places__container.container
+        +section-header("Plan your perfect trip", "Search Flights & Places Hire to our most popular destinations", "See more places")
+        .places__cards.grid.grid-cols-3.gap-12
+          +place-card("./images/flight/p-1.png", "Istanbul, Turkey", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-2.png", "Sydney, Australia", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-3.png", "Baku, Azerbaijan", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-4.png", "Malé, Maldives", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-5.png", "Paris, France", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-6.png", "New York, US", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-7.png", "London, UK", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-8.png", "Tokyo, Japan", "Flights • Hotels • Resorts")
+          +place-card("./images/flight/p-9.png", "Dubai, UAE", "Flights • Hotels • Resorts")
+    section.travel.pt-40.bg-white
+      .travel__container.container
+        +section-header("Fall into travel", "Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your destination.", "See All")
+        .travel__cards.grid.grid-cols-4
+          +flight-card()
