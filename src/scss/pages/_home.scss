@@ -1,71 +1,8 @@
 .main {}
 
 .places {
-  &__map {
-    height: 485px;
-    background-color: $color-green-400;
+  &__container {
+
   }
-
-  &__inner {
-    position: relative;
-    background-image: url("../images/flight/bg.png");
-    background-size: cover;
-  }
-
-  &__point {
-    position: relative;
-    position: absolute;
-    border-radius: 4px;
-    cursor: pointer;
-
-    .arrow {
-      position: absolute;
-    }
-
-    &:first-child {
-      top: 7rem;
-      left: 18rem;
-
-      .arrow {
-        bottom: -3.8rem;
-        right: 3.5rem;
-      }
-    }
-
-    &:nth-child(2) {
-      top: 9rem;
-      right: 18rem;
-      .arrow {
-        bottom: -5.4rem;
-        right: 10rem;
-      }
-    }
-
-    &:nth-child(3) {
-      bottom: 14.2rem;
-      left: 36.8rem;
-      .arrow {
-        bottom: -3.5rem;
-        right: 11rem;
-      }
-    }
-
-    &:nth-child(4) {
-      bottom: 15.5rem;
-      left: 67rem;
-      .arrow {
-        top: -3.3rem;
-        right: 11rem;
-      }
-    }
-
-    &:nth-child(5) {
-      bottom: 17.5rem;
-      right: 3.6rem;
-      .arrow {
-        bottom: -3.3rem;
-        right: 9.8rem;
-      }
-    }
-  }
+  
 }
