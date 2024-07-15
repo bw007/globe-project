@@ -27,18 +27,28 @@ block content
     section.places.mb-60
       .places__container.container
         +section-header("Plan your perfect trip", "Search Flights & Places Hire to our most popular destinations", "See more places")
-        .places__cards.grid.grid-cols-3.gap-12
-          +place-card("./images/flight/p-1.png", "Istanbul, Turkey", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-2.png", "Sydney, Australia", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-3.png", "Baku, Azerbaijan", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-4.png", "Malé, Maldives", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-5.png", "Paris, France", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-6.png", "New York, US", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-7.png", "London, UK", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-8.png", "Tokyo, Japan", "Flights • Hotels • Resorts")
-          +place-card("./images/flight/p-9.png", "Dubai, UAE", "Flights • Hotels • Resorts")
-    section.travel.pt-40.bg-white
+        .places__cards.grid.grid-cols-3.gap-12.mb-80
+          +mini-card("./images/flight/p-1.png", "Istanbul, Turkey", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-2.png", "Sydney, Australia", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-3.png", "Baku, Azerbaijan", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-4.png", "Malé, Maldives", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-5.png", "Paris, France", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-6.png", "New York, US", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-7.png", "London, UK", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-8.png", "Tokyo, Japan", "Flights • Hotels • Resorts")
+          +mini-card("./images/flight/p-9.png", "Dubai, UAE", "Flights • Hotels • Resorts")
+        .places__block.grid.grid-cols-2.gap-9
+          +page-card("./images/flight/pic-1.jpg", "Flights", "Search Flights & Places Hire to our most popular destinations", "Show Flights", "./images/icons/paperplane-dark.svg")
+          +page-card("./images/flight/pic-2.jpg", "Hotels", "Search hotels & Places Hire to our most popular destinations", "Show Hotels", "./images/icons/bed-dark.svg")
+    section.travel.pt-40.pb-80.bg-white
       .travel__container.container
         +section-header("Fall into travel", "Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your destination.", "See All")
-        .travel__cards.grid.grid-cols-4
-          +flight-card()
+        .travel__cards.grid.grid-cols-4.gap-6
+          +flight-card("../images/flight/t-1.png", "Melbourne", "An amazing journey", "$ 700", "#")
+          +flight-card("../images/flight/t-2.png", "Paris", "A Paris Adventure", "$ 600", "#")
+          +flight-card("../images/flight/t-3.png", "London", "London eye adventure", "$ 350", "#")
+          +flight-card("../images/flight/t-4.png", "Columbia", "Amazing streets", "$ 700", "#")
+    section.region.pt-40.pb-80.bg-white
+      .region__container.container
+        +section-header("Natural wonders", "Travel with us to the extremes of the world.", "See All")
+        +region-cards()
