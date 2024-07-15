@@ -23,6 +23,15 @@
     height: 48px;
   }
 
+  &__light {
+    background-color: $color-white;
+    &:hover {
+      background-color: $color-gray-50;
+    }
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05)
+    }
+  }
   &__dark {
     background-color: $color-gray-900;
     color: $color-white;
