@@ -1,0 +1,6 @@
+mixin place-card(src="", place="", features="")
+  .place-card.flex.items-center.gap-6.bg-white.px-16.py-16.rounded-2xl.card-shadow
+    img.place-card__img(src= src, alt="")
+    .flex.flex-col.gap-3.text-dark-gray
+      p.text-md.font-semibold= place
+      span.text-sm.font-medium= features
