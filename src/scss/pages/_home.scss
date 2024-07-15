@@ -1,8 +1,22 @@
-.main {}
+.main {
+}
 
 .places {
   &__container {
-
   }
-  
+  &__cards {
+    .mini-card {
+      background-color: $color-white;
+      box-shadow: 0px 4px 16px 0px #11221105;
+    }
+  }
+  &__block {
+    .text-5xl {
+      font-family: "TradeGothic LT Extended", sans-serif;
+    }
+    .text-md {
+      width: 90%;
+    }
+  }
 }
+
