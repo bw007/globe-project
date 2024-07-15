@@ -1,0 +1,16 @@
+.page-card {
+  height: 560px;
+  &__bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition-property: $transition-property-common;
+    transition-duration: $transition-duration-coala;
+  }
+  &:hover .page-card__bg {
+    transform: scale(1.1);
+  }
+}
