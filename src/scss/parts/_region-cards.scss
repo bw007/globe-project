@@ -1,6 +1,18 @@
 .region-cards {
   .region-info {
     width: 550px;
+    grid-row: 1 / 3;
+  }
+  .region-pic {
+    .card {
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
   .text-5xl {
     width: 360px;
