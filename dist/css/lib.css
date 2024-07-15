@@ -5612,6 +5612,10 @@
     font-weight: 900;
 }
 
+.font-trade-gothic {
+    font-family: "TradeGothic LT Extended";
+}
+
 .text-left {
     text-align: left;
 }
@@ -5761,6 +5765,16 @@
 .w-fit {
     width: -moz-fit-content;
     width: fit-content;
+}
+
+.max-w-fit {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+
+.min-w-fit {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
 }
 
 /* Percentage-based and other heights */

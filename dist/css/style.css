@@ -340,6 +340,7 @@ body {
     font-weight: 400;
     line-height: 1.15;
     background-color: #FAFAFA;
+    color: #112211;
 }
 
 .icon-sm {
@@ -386,6 +387,18 @@ body {
 
 .btn__large {
     height: 48px;
+}
+
+.btn__light {
+    background-color: #FFFFFF;
+}
+
+.btn__light:hover {
+    background-color: #F7FAFC;
+}
+
+.btn__light:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
 .btn__dark {
@@ -620,6 +633,14 @@ body {
 
 .page-card:hover .page-card__bg {
     transform: scale(1.1);
+}
+
+.region-cards .region-info {
+    width: 550px;
+}
+
+.region-cards .text-5xl {
+    width: 360px;
 }
 
 .places__cards .mini-card {
