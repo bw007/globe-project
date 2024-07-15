@@ -394,11 +394,11 @@ body {
 }
 
 .btn__light:hover {
-    background-color: #F7FAFC;
+    background-color: #EDF2F7;
 }
 
-.btn__light:focus {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+.btn__light:active {
+    background-color: #F7FAFC;
 }
 
 .btn__dark {
@@ -637,6 +637,19 @@ body {
 
 .region-cards .region-info {
     width: 550px;
+    grid-row: 1/3;
+}
+
+.region-cards .region-pic .card {
+    overflow: hidden;
+    position: relative;
+}
+
+.region-cards .region-pic .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .region-cards .text-5xl {
