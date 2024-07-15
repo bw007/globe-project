@@ -64,73 +64,142 @@
       <section class="space-y-26"></section>
       <section class="places mb-60">
         <div class="places__container container">
-          <div class="section-header flex items-center justify-between mb-30">
+          <div class="section-header flex items-center justify-between gap-24 mb-30">
             <div class="section-header__text flex flex-col gap-y-8">
               <h1 class="section-header__tille text-3xl font-semibold">Plan your perfect trip</h1>
               <p class="section-header__desc text-md font-regular">Search Flights &amp; Places Hire to our most popular destinations</p>
             </div>
             <button class="btn btn__plain">See more places</button>
           </div>
-          <div class="places__cards grid grid-cols-3 gap-12">
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-1.png" alt=""/>
+          <div class="places__cards grid grid-cols-3 gap-12 mb-80">
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-1.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">Istanbul, Turkey</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-2.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-2.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">Sydney, Australia</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-3.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-3.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">Baku, Azerbaijan</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-4.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-4.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">Malé, Maldives</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-5.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-5.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">Paris, France</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-6.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-6.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">New York, US</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-7.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-7.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">London, UK</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-8.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-8.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">Tokyo, Japan</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
-            <div class="place-card flex items-center gap-6 bg-white px-16 py-16 rounded-2xl card-shadow"><img class="place-card__img" src="./images/flight/p-9.png" alt=""/>
+            <div class="mini-card flex items-center gap-6 px-16 py-16 rounded-2xl"><img class="mini-card__img" src="./images/flight/p-9.png" alt=""/>
               <div class="flex flex-col gap-3 text-dark-gray">
                 <p class="text-md font-semibold">Dubai, UAE</p><span class="text-sm font-medium">Flights • Hotels • Resorts</span>
               </div>
             </div>
           </div>
+          <div class="places__block grid grid-cols-2 gap-9">
+            <div class="page-card flex flex-col items-center justify-end gap-6 overflow-hidden rounded-20 px-24 py-24 relative">
+              <div class="page-card__bg absolute z-0" style="background-image: url(./images/flight/pic-1.jpg)"></div>
+              <div class="flex flex-col items-center gap-6 z-10">
+                <h3 class="text-5xl font-bold text-white">Flights</h3>
+                <p class="text-md text-white text-center">Search Flights &amp; Places Hire to our most popular destinations</p><a class="btn btn__success btn__large"><img class="icon-sm" src="./images/icons/paperplane-dark.svg"/>Show Flights</a>
+              </div>
+            </div>
+            <div class="page-card flex flex-col items-center justify-end gap-6 overflow-hidden rounded-20 px-24 py-24 relative">
+              <div class="page-card__bg absolute z-0" style="background-image: url(./images/flight/pic-2.jpg)"></div>
+              <div class="flex flex-col items-center gap-6 z-10">
+                <h3 class="text-5xl font-bold text-white">Hotels</h3>
+                <p class="text-md text-white text-center">Search hotels &amp; Places Hire to our most popular destinations</p><a class="btn btn__success btn__large"><img class="icon-sm" src="./images/icons/bed-dark.svg"/>Show Hotels</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="travel pt-40 bg-white">
+      <section class="travel pt-40 pb-80 bg-white">
         <div class="travel__container container">
-          <div class="section-header flex items-center justify-between mb-30">
+          <div class="section-header flex items-center justify-between gap-24 mb-30">
             <div class="section-header__text flex flex-col gap-y-8">
               <h1 class="section-header__tille text-3xl font-semibold">Fall into travel</h1>
               <p class="section-header__desc text-md font-regular">Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your destination.</p>
             </div>
             <button class="btn btn__plain">See All</button>
           </div>
-          <div class="travel__cards grid grid-cols-4">
-            <div class="travel-card" style="background-image: url(../images/flight/t-1.png)"></div>
+          <div class="travel__cards grid grid-cols-4 gap-6">
+            <div class="flight-card flex flex-col items-center justify-end gap-6 rounded-2xl px-24 py-24 relative">
+              <div class="flight-card__bg absolute z-0" style="background-image: url(../images/flight/t-1.png)"></div>
+              <div class="flex items-center justify-between w-full z-10">
+                <div class="flex flex-col">
+                  <h3 class="text-2xl font-semibold text-white">Melbourne</h3><span class="text-sm text-white">An amazing journey</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-white whitespace-nowrap">$ 700</h3>
+              </div><a class="btn btn__success btn__large w-full z-10" href="#">Book a Hotel</a>
+            </div>
+            <div class="flight-card flex flex-col items-center justify-end gap-6 rounded-2xl px-24 py-24 relative">
+              <div class="flight-card__bg absolute z-0" style="background-image: url(../images/flight/t-2.png)"></div>
+              <div class="flex items-center justify-between w-full z-10">
+                <div class="flex flex-col">
+                  <h3 class="text-2xl font-semibold text-white">Paris</h3><span class="text-sm text-white">A Paris Adventure</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-white whitespace-nowrap">$ 600</h3>
+              </div><a class="btn btn__success btn__large w-full z-10" href="#">Book a Hotel</a>
+            </div>
+            <div class="flight-card flex flex-col items-center justify-end gap-6 rounded-2xl px-24 py-24 relative">
+              <div class="flight-card__bg absolute z-0" style="background-image: url(../images/flight/t-3.png)"></div>
+              <div class="flex items-center justify-between w-full z-10">
+                <div class="flex flex-col">
+                  <h3 class="text-2xl font-semibold text-white">London</h3><span class="text-sm text-white">London eye adventure</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-white whitespace-nowrap">$ 350</h3>
+              </div><a class="btn btn__success btn__large w-full z-10" href="#">Book a Hotel</a>
+            </div>
+            <div class="flight-card flex flex-col items-center justify-end gap-6 rounded-2xl px-24 py-24 relative">
+              <div class="flight-card__bg absolute z-0" style="background-image: url(../images/flight/t-4.png)"></div>
+              <div class="flex items-center justify-between w-full z-10">
+                <div class="flex flex-col">
+                  <h3 class="text-2xl font-semibold text-white">Columbia</h3><span class="text-sm text-white">Amazing streets</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-white whitespace-nowrap">$ 700</h3>
+              </div><a class="btn btn__success btn__large w-full z-10" href="#">Book a Hotel</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="region pt-40 pb-80 bg-white">
+        <div class="region__container container">
+          <div class="section-header flex items-center justify-between gap-24 mb-30">
+            <div class="section-header__text flex flex-col gap-y-8">
+              <h1 class="section-header__tille text-3xl font-semibold">Natural wonders</h1>
+              <p class="section-header__desc text-md font-regular">Travel with us to the extremes of the world.</p>
+            </div>
+            <button class="btn btn__plain">See All</button>
+          </div>
+          <div class="region-cards grid grid-cols-3 gap-9">
+            <div class="region-info flex flex-col">
+              <div class="flex justify-between">
+                <h1 class="text-5xl font-bold">Backpacking Sri Lanka</h1>
+              </div>
+            </div>
           </div>
         </div>
       </section>
