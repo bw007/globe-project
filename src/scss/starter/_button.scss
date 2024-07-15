@@ -10,8 +10,8 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  @include flex(space-between, center, $g: 7px);
-  @include font($text-sm, 1.5, 500);
+  @include flex(center, center, $g: 7px);
+  @include font($text-sm, 1.15, 500);
   transition-property: $transition-property-common;
   transition-duration: $transition-duration-faster;
 
