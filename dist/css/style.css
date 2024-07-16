@@ -472,8 +472,10 @@ body {
 .input-fieldset {
     border: 1px solid #79747e;
     border-radius: 4px;
-    width: -moz-fit-content;
-    width: fit-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    flex: 1 !important;
+    min-width: 0;
 }
 
 .input-fieldset legend {
@@ -485,10 +487,11 @@ body {
     border: none;
     outline: none;
     line-height: 1.5;
+    display: inline-block;
+    width: 100% !important;
 }
 
 .input-fieldset select {
-    min-width: 140px;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -503,6 +506,7 @@ body {
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
+    display: inline-block;
 }
 
 .container {
@@ -514,11 +518,6 @@ body {
     margin-left: auto;
 }
 
-.header__hero {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .header__hero--flight {
     background-image: linear-gradient(90deg, rgba(19, 24, 66, 0.75), rgba(0, 0, 0, 0.1)), url("../images/header/bg-2.jpg");
     background-position: top;
@@ -527,6 +526,11 @@ body {
 .header__hero--stays {
     background-image: linear-gradient(90deg, rgba(19, 24, 66, 0.75), rgba(0, 0, 0, 0.1)), url("../images/header/bg-3.jpg");
     background-position: center;
+}
+
+.header__hero--flights, .header__hero--stays {
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-nav {
@@ -579,6 +583,32 @@ body {
     line-height: 1.4;
 }
 
+.footer__mailbox {
+    top: -204px;
+    background-image: url("../images/footer/mailbox-picture.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    left: 0;
+}
+
+.footer__mailbox .text-5xl {
+    width: 250px;
+}
+
+.footer__mailbox .text-md {
+    display: block;
+    width: 50%;
+}
+
+.footer__mailbox input {
+    width: 40% !important;
+}
+
+.footer__links {
+    flex: 1;
+}
+
 .interaction-panel {
     left: 2rem;
     right: 2rem;
@@ -586,11 +616,6 @@ body {
     border-radius: 16px;
     box-shadow: 0 4px 16px 0 rgba(141, 211, 187, 0.0823529412);
     background-color: #FFFFFF;
-    display: none;
-}
-
-.interaction-panel__form-inner {
-    gap: 24px !important;
 }
 
 .mini-card {
@@ -645,25 +670,32 @@ body {
     transform: scale(1.1);
 }
 
+.region-cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .region-cards .region-info {
-    width: 550px;
     grid-row: 1/3;
 }
 
-.region-cards .region-pic .card {
-    overflow: hidden;
-    position: relative;
+.region-cards .card {
+    border: 2px solid #CDEAE1;
 }
 
-.region-cards .region-pic .card img {
+.region-cards .card img {
+    transform: scale(1.025);
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: fill;
+    object-fit: fill;
 }
 
 .region-cards .text-5xl {
-    width: 360px;
+    width: 300px;
 }
 
 .places__cards .mini-card {
