@@ -4,3 +4,5 @@ mixin input(type="text", placeholder="", src="", label="", val="")
     .input-wrap.flex.items-center.justify-between.px-15.pt-10.pb-15
       input.text-md.font-regular.pr-15(type= type, placeholder= placeholder, value= val)
       img.icon-sms(src= src, alt="", draggable="false")
+mixin easy-input(type="", placeholder="", value="")
+  input.input-easy.text-md.px-18.py-18(type= type, placeholder= placeholder, value= value)
