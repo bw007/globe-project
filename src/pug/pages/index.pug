@@ -9,10 +9,10 @@ block content
         p.header-hero__caption.font-regular.text-xl Special offers to suit your plan
         .header-hero__interaction-panel.interaction-panel.absolute.flex.flex-col.gap-12.px-24.py-32
           h3.interaction-panel__title.text-xl.font-semibold Where are you flying?
-          form.interaction-panel__form.flex.flex-col.gap-12
-            .interaction-panel__form-inner.flex.justify-between.items-center
+          form.interaction-panel__form.flex.flex-col.gap-12.w-full
+            .interaction-panel__form-inner.w-full
               +input("text", "Route", "./images/icons/swap-horizontal.svg", "From - To", "Lahore - Karachi")
-              +select("Return", "Trip")
+              +select("Return", "Trip", "Return", "Departure")
               +input("text", "Route", "./images/icons/calendar-dark.svg", "Depart- Return", "07 Nov 22 - 13 Nov 22")
               +input("text", "Route", "./images/icons/breifcase-dark.svg", "Passenger - Class", "1 Passenger, Economy")
             .interaction-panel__form-submit.flex.items-center.justify-end.gap-4.w-full
@@ -61,4 +61,4 @@ block content
           "./images/flight/r-3.jpg", 
           "./images/flight/r-4.jpg"
         )
-    section.space-y-20
+    section.space-y-20.bg-white
