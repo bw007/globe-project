@@ -10,3 +10,15 @@
   line-height: $line;
   font-weight: $weight;
 }
+
+@mixin breakpoint-up ($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down ($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
