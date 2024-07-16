@@ -5,6 +5,12 @@
   border-radius: 16px;
   box-shadow: 0 4px 16px 0 #8DD3BB15;
   background-color: $color-white;
+  @include breakpoint-max (960px) {
+    bottom: -50%;
+  }
+  @include breakpoint-max (511px) {
+    bottom: -82%;
+  }
   &__title {
   }
   &__form {
