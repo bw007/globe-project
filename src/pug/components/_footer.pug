@@ -1,11 +1,40 @@
-footer.footer
-  .footer__container.container.relative
-    .footer__mailbox.bg-teal.rounded-20.px-24.py-20
-      .flex.flex-col.gap-6
-        h1.text-5xl.font-bold.font-trade-gothic Subscribe Newsletter
-        p.text-xl.font-bold.font-trade-gothic The Travel
-        span.text-md.font-medium Get inspired! Receive travel discounts, tips and behind the scenes stories.
-        .flex.items-center.gap-6
-          +easy-input("text", "Your email address")
-          button.btn.btn__dark.btn__xlarge Subscribe
-    .footer__inner
+footer.footer.bg-success.py-64
+  .footer__container.container.h-full
+    .w-full.relative.py-80
+      .footer__mailbox.bg-teal.rounded-20.px-24.py-20.w-full.absolute
+        .flex.flex-col.gap-6
+          h1.text-5xl.font-bold.font-trade-gothic.mb-6 Subscribe Newsletter
+          p.text-xl.font-bold.font-trade-gothic The Travel
+          span.text-md.font-medium Get inspired! Receive travel discounts, tips and behind the scenes stories.
+          .flex.items-center.gap-6.w-full
+            +easy-input("text", "Your email address")
+            button.btn.btn__dark.btn__xlarge Subscribe
+    .footer__inner.flex.items-start.justify-between.gap-32
+      .footer__socially.flex.flex-col.gap-8
+        a(href="index.html"): img(src="./images/footer/logo-2.svg", width="120", height="39")
+        .flex.items-center.justify-between
+          a(href="#"): img(src="./images/footer/facebook.svg")
+          a(href="#"): img(src="./images/footer/twitter.svg")
+          a(href="#"): img(src="./images/footer/youtube.svg")
+          a(href="#"): img(src="./images/footer/instagram.svg")
+      .footer__links.grid.grid-cols-5.gap-4
+        .footer__block.flex.flex-col.gap-4
+          h4.text-md.font-bold.font-trade-gothic.mb-6 Our Destinations
+          each item in ["Chiroqchi", "Tarag'ay", "Quruqsoy", "Xorazm"]
+            a.text-sm.font-medium(href="#")= item
+        .footer__block.flex.flex-col.gap-4
+          h4.text-md.font-bold.font-trade-gothic.mb-6 Our Activities
+          each item in ["Northern Lights", "Cruising & sailing", "Multi-activities", "Kayaing"]
+            a.text-sm.font-medium(href="#")= item
+        .footer__block.flex.flex-col.gap-4
+          h4.text-md.font-bold.font-trade-gothic.mb-6 Travel Blogs
+          each item in ["Bali Travel Guide", "Sri Lanks Travel Guide", "Peru Travel Guide", "Bali Travel Guide"]
+            a.text-sm.font-medium(href="#")= item
+        .footer__block.flex.flex-col.gap-4
+          h4.text-md.font-bold.font-trade-gothic.mb-6 About Us
+          each item in ["Our Story", "Work with us"]
+            a.text-sm.font-medium(href="#")= item
+        .footer__block.flex.flex-col.gap-4
+          h4.text-md.font-bold.font-trade-gothic.mb-6 Contact Us
+          each item in ["Our Story", "Work with us"]
+            a.text-sm.font-medium(href="#")= item
