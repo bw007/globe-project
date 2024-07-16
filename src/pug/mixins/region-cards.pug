@@ -1,14 +1,13 @@
 mixin region-cards(title="", price="", desc="", btn="", ...imgs)
-  .region-cards.flex.justify-between.gap-9
+  .region-cards.gap-9
     .region-info.flex.flex-col.justify-between.bg-success.rounded-20.px-24.py-24.gap-14
-      .flex.justify-between.items-start.gap-8
+      .flex.justify-between.items-start.gap-4
         h1.text-5xl.font-bold.font-trade-gothic= title
         .flex.flex-col.items-center.px-8.py-8.bg-white.rounded-lg.gap-2
           p.text-sm.font-trade-gothic From
           h3.text-xl.font-semibold.whitespace-nowrap= price
       p.text-sm.mb-80= desc
       button.btn.btn__light.btn__large= btn
-    .region-pic.grid.grid-cols-2.gap-9
-      each src in imgs
-        .card.rounded-xl
-          img(src= src, alt="")
+    each src in imgs
+      .card.rounded-xl.relative.overflow-hidden
+        img.absolute(src= src, alt="")
