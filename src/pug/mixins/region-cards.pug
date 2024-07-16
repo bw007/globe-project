@@ -7,7 +7,7 @@ mixin region-cards(title="", price="", desc="", btn="", ...imgs)
           p.text-sm.font-trade-gothic From
           h3.text-xl.font-semibold.whitespace-nowrap= price
       p.text-sm.mb-80= desc
-      button.btn.btn__light= btn
+      button.btn.btn__light.btn__large= btn
     .region-pic.grid.grid-cols-2.gap-9
       each src in imgs
         .card.rounded-xl
