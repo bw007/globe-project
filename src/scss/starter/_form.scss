@@ -1,21 +1,24 @@
 .input-fieldset {
   border: 1px solid #79747e;
   border-radius: 4px;
-  width: fit-content;
-
+  min-width: 0;
+  width: 100% !important;
   legend {
     color: #797979;
   }
+
+  
 
   input,
   select {
     border: none;
     outline: none;
     line-height: 1.5;
+    display: inline-block;
+    width: 100%;
   }
 
   select {
-    min-width: 140px;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -26,9 +29,9 @@
     background-repeat: no-repeat;
   }
 }
-
 .input-easy {
   border: 1px solid transparent;
   border-radius: 5px;
   outline: none;
+  display: inline-block;
 }
