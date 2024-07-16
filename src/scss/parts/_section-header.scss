@@ -1,0 +1,16 @@
+.section-header {
+  &__text {
+    @include breakpoint-max (640px) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  @include breakpoint-max (640px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    .btn {
+      width: 40%;
+    }
+  }
+}
