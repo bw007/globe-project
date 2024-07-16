@@ -1,0 +1,52 @@
+.footer {
+  @include breakpoint-max (580px) {
+    padding: 30px;
+  }
+  &__container {}
+  &__mailbox {
+    top: -204px;
+    background-image: url("../images/footer/mailbox-picture.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    left: 0;
+    .text-5xl {
+      width: 250px;
+    }
+    .text-md {
+      display: block;
+      width: 50%;
+    }
+    input {
+      width: 40% !important;
+    }
+  }
+  &__inner {
+    @include breakpoint-max (1024px) {
+      gap: 70px;
+    }
+    @include breakpoint-max (580px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  &__socially {
+    @include breakpoint-max (580px) {
+      gap: 5px;
+    }
+  }
+  &__links {
+    flex: 1;
+    @include breakpoint-max (1024px) {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 28px;
+    } 
+  }
+  &__block {
+    @include breakpoint-max (580px) {
+      align-items: center;
+      gap: 6px;
+    }
+  }
+}
