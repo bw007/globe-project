@@ -4,14 +4,15 @@
   bottom: -33%;
   border-radius: 16px;
   box-shadow: 0 4px 16px 0 #8DD3BB15;
-  background-color: $color-white;  
-  display: none;
+  background-color: $color-white;
   &__title {
   }
   &__form {
     
   }
   &__form-inner {
-    gap: 24px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
   }
 }
