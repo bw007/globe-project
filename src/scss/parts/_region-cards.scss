@@ -1,20 +1,21 @@
 .region-cards {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   .region-info {
-    width: 550px;
     grid-row: 1 / 3;
   }
-  .region-pic {
-    .card {
-      overflow: hidden;
-      position: relative;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .card {
+    border: 2px solid $color-teal-200;
+    img {
+      transform: scale(1.025);
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: fill;
     }
   }
   .text-5xl {
-    width: 360px;
+    width: 300px;
   }
 }
