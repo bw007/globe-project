@@ -389,6 +389,10 @@ body {
     height: 48px;
 }
 
+.btn__xlarge {
+    height: 56px;
+}
+
 .btn__light {
     background-color: #FFFFFF;
 }
@@ -493,6 +497,12 @@ body {
     background-image: url("../images/icons/chevron-down.svg");
     background-position: calc(100% - 10px) 10px;
     background-repeat: no-repeat;
+}
+
+.input-easy {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
 }
 
 .container {
