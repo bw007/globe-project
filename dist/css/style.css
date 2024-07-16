@@ -472,10 +472,8 @@ body {
 .input-fieldset {
     border: 1px solid #79747e;
     border-radius: 4px;
-    max-width: -moz-max-content;
-    max-width: max-content;
-    flex: 1 !important;
     min-width: 0;
+    width: 100% !important;
 }
 
 .input-fieldset legend {
@@ -488,7 +486,7 @@ body {
     outline: none;
     line-height: 1.5;
     display: inline-block;
-    width: 100% !important;
+    width: 100%;
 }
 
 .input-fieldset select {
@@ -583,6 +581,12 @@ body {
     line-height: 1.4;
 }
 
+@media only screen and (max-width: 580px) {
+    .footer {
+        padding: 30px;
+    }
+}
+
 .footer__mailbox {
     top: -204px;
     background-image: url("../images/footer/mailbox-picture.svg");
@@ -605,8 +609,42 @@ body {
     width: 40% !important;
 }
 
+@media only screen and (max-width: 1024px) {
+    .footer__inner {
+        gap: 70px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .footer__socially {
+        gap: 5px;
+    }
+}
+
 .footer__links {
     flex: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer__links {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 28px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .footer__block {
+        align-items: center;
+        gap: 6px;
+    }
 }
 
 .interaction-panel {
@@ -616,6 +654,12 @@ body {
     border-radius: 16px;
     box-shadow: 0 4px 16px 0 rgba(141, 211, 187, 0.0823529412);
     background-color: #FFFFFF;
+}
+
+.interaction-panel__form-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
 }
 
 .mini-card {
@@ -703,8 +747,16 @@ body {
     box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.0196078431);
 }
 
-.places__block .text-5xl {
-    font-family: "TradeGothic LT Extended", sans-serif;
+@media only screen and (max-width: 1060px) {
+    .places__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .places__cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 .places__block .text-md {

@@ -22,7 +22,7 @@
           <div class="header-hero__interaction-panel interaction-panel absolute flex flex-col gap-12 px-24 py-32">
             <h3 class="interaction-panel__title text-xl font-semibold">Where are you flying?</h3>
             <form class="interaction-panel__form flex flex-col gap-12 w-full">
-              <div class="interaction-panel__form-inner flex justify-between items-center gap-9">
+              <div class="interaction-panel__form-inner w-full">
                 <fieldset class="input-fieldset">
                   <legend class="text-sm font-regular ml-10 px-5">From - To</legend>
                   <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
@@ -33,8 +33,8 @@
                   <legend class="text-sm font-regular ml-10 px-5">Trip</legend>
                   <div class="select-wrap flex items-center justify-between">
                     <select class="text-md font-regular pr-15 px-15 pt-10 pb-15" value="Return">
-                      <option value="Retu">Return</option>
-                      <option value="Borisj">Borish</option>
+                      <option value="Return">Return</option>
+                      <option value="Departure">Departure</option>
                     </select>
                   </div>
                 </fieldset>
@@ -122,14 +122,14 @@
             <div class="page-card flex flex-col items-center justify-end gap-6 overflow-hidden rounded-20 px-24 py-24 relative">
               <div class="page-card__bg absolute z-0" style="background-image: url(./images/flight/pic-1.jpg)"></div>
               <div class="flex flex-col items-center gap-6 z-10">
-                <h3 class="text-5xl font-bold text-white">Flights</h3>
+                <h3 class="text-5xl font-bold font-trade-gothic text-white">Flights</h3>
                 <p class="text-md text-white text-center">Search Flights &amp; Places Hire to our most popular destinations</p><a class="btn btn__success btn__large"><img class="icon-sm" src="./images/icons/paperplane-dark.svg"/>Show Flights</a>
               </div>
             </div>
             <div class="page-card flex flex-col items-center justify-end gap-6 overflow-hidden rounded-20 px-24 py-24 relative">
               <div class="page-card__bg absolute z-0" style="background-image: url(./images/flight/pic-2.jpg)"></div>
               <div class="flex flex-col items-center gap-6 z-10">
-                <h3 class="text-5xl font-bold text-white">Hotels</h3>
+                <h3 class="text-5xl font-bold font-trade-gothic text-white">Hotels</h3>
                 <p class="text-md text-white text-center">Search hotels &amp; Places Hire to our most popular destinations</p><a class="btn btn__success btn__large"><img class="icon-sm" src="./images/icons/bed-dark.svg"/>Show Hotels</a>
               </div>
             </div>
@@ -229,24 +229,24 @@
             </div>
           </div>
         </div>
-        <div class="footer__inner flex items-start justify-between gap-60">
-          <div class="flex flex-col gap-8"><a href="index.html"><img src="./images/footer/logo-2.svg" width="120" height="39"></a>
+        <div class="footer__inner flex items-start justify-between gap-32">
+          <div class="footer__socially flex flex-col gap-8"><a href="index.html"><img src="./images/footer/logo-2.svg" width="120" height="39"></a>
             <div class="flex items-center justify-between"><a href="#"><img src="./images/footer/facebook.svg"></a><a href="#"><img src="./images/footer/twitter.svg"></a><a href="#"><img src="./images/footer/youtube.svg"></a><a href="#"><img src="./images/footer/instagram.svg"></a></div>
           </div>
-          <div class="footer__links flex items-start justify-between">
-            <div class="flex flex-col gap-4">
+          <div class="footer__links grid grid-cols-5 gap-4">
+            <div class="footer__block flex flex-col gap-4">
               <h4 class="text-md font-bold font-trade-gothic mb-6">Our Destinations</h4><a class="text-sm font-medium" href="#">Chiroqchi</a><a class="text-sm font-medium" href="#">Tarag'ay</a><a class="text-sm font-medium" href="#">Quruqsoy</a><a class="text-sm font-medium" href="#">Xorazm</a>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="footer__block flex flex-col gap-4">
               <h4 class="text-md font-bold font-trade-gothic mb-6">Our Activities</h4><a class="text-sm font-medium" href="#">Northern Lights</a><a class="text-sm font-medium" href="#">Cruising &amp; sailing</a><a class="text-sm font-medium" href="#">Multi-activities</a><a class="text-sm font-medium" href="#">Kayaing</a>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="footer__block flex flex-col gap-4">
               <h4 class="text-md font-bold font-trade-gothic mb-6">Travel Blogs</h4><a class="text-sm font-medium" href="#">Bali Travel Guide</a><a class="text-sm font-medium" href="#">Sri Lanks Travel Guide</a><a class="text-sm font-medium" href="#">Peru Travel Guide</a><a class="text-sm font-medium" href="#">Bali Travel Guide</a>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="footer__block flex flex-col gap-4">
               <h4 class="text-md font-bold font-trade-gothic mb-6">About Us</h4><a class="text-sm font-medium" href="#">Our Story</a><a class="text-sm font-medium" href="#">Work with us</a>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="footer__block flex flex-col gap-4">
               <h4 class="text-md font-bold font-trade-gothic mb-6">Contact Us</h4><a class="text-sm font-medium" href="#">Our Story</a><a class="text-sm font-medium" href="#">Work with us</a>
             </div>
           </div>
