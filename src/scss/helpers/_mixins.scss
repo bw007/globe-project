@@ -11,13 +11,13 @@
   font-weight: $weight;
 }
 
-@mixin breakpoint-up ($breakpoint) {
+@mixin breakpoint-min ($breakpoint) {
   @media only screen and (min-width: $breakpoint) {
     @content;
   }
 }
 
-@mixin breakpoint-down ($breakpoint) {
+@mixin breakpoint-max ($breakpoint) {
   @media only screen and (max-width: $breakpoint) {
     @content;
   }
