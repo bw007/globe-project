@@ -1,0 +1,32 @@
+//- Filter range
+mixin filter-range(title="", start="", end="")
+  .filter.filter__range.flex.flex-col.gap-7.w-full.pb-25
+    .filter__caption.flex.justify-between.items-center
+      h5.text-md.font-semibold= title
+      img(src="./images/icons/chevron-up.svg")
+    .filter__line.filter-point.w-full.bg-dark.mt-6.relative
+      span.filter-point__left.absolute
+      span.filter-point__right.absolute
+    .filter__count.filter-count.text-xs.font-medium.w-full.flex.justify-between
+      span.filter-count__left= start
+      span.filter-count__right= end
+//- Filter rating
+mixin filter-rating(title="", ...items)
+  .filter.filter__rating.flex.flex-col.gap-6.w-full.pb-25
+    .filter__caption.flex.justify-between.items-center
+      h5.text-md.font-semibold= title
+      img(src="./images/icons/chevron-up.svg")
+    .filter__rating-options.grid.gap-5
+      each i in items
+        button.btn.btn__small.btn__plain= i
+//- Filter chekbox
+mixin filter-checkbox(title="", ...items)
+  .filter.filter__checkbox.flex.flex-col.gap-6.w-full.pb-25
+    .filter__caption.flex.justify-between.items-center
+      h5.text-md.font-semibold= title
+      img(src="./images/icons/chevron-up.svg")
+    .filter__check-list.flex.flex-col.gap-5
+      each i in items
+        label.text-sm.font-medium.flex.item-center.gap-3
+          input(type="checkbox")
+          span= i
