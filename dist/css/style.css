@@ -550,7 +550,7 @@ body {
 
 @media only screen and (max-width: 520px) {
     .header-nav {
-        height: 60px;
+        height: 75px;
     }
 }
 
