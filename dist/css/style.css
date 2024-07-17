@@ -240,6 +240,12 @@ template {
     font-size: 10px;
 }
 
+@media only screen and (max-width: 480px) {
+    :root {
+        font-size: 9px;
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -516,6 +522,13 @@ body {
     margin-left: auto;
 }
 
+@media only screen and (max-width: 480px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 .header__hero--flight {
     background-image: linear-gradient(90deg, rgba(19, 24, 66, 0.75), rgba(0, 0, 0, 0.1)), url("../images/header/bg-2.jpg");
     background-position: top;
@@ -591,9 +604,35 @@ body {
     line-height: 1.4;
 }
 
+@media only screen and (max-width: 960px) {
+    .header-hero__interaction-panel {
+        bottom: -50% !important;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    .header-hero__interaction-panel {
+        bottom: -82% !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header-hero__interaction-panel {
+        bottom: -105% !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header-hero__title {
+        font-size: 28px;
+        max-width: 300px;
+    }
+}
+
 @media only screen and (max-width: 580px) {
     .footer {
-        padding: 30px;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 }
 
@@ -629,7 +668,7 @@ body {
 @media only screen and (max-width: 768px) {
     .footer__mailbox {
         background-image: none;
-        top: -160px;
+        top: -180px;
     }
 
     .footer__mailbox .text-5xl {
@@ -643,6 +682,25 @@ body {
 
     .footer__mailbox input {
         width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .footer__mailbox {
+        top: -220px;
+    }
+
+    .footer__mailbox .mailbox-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__mailbox .mailbox-bottom input {
+        width: 100% !important;
+    }
+
+    .footer__mailbox .mailbox-bottom input, .footer__mailbox .mailbox-bottom button {
+        height: 36px;
     }
 }
 
@@ -723,22 +781,16 @@ body {
     background-color: #FFFFFF;
 }
 
-@media only screen and (max-width: 960px) {
-    .interaction-panel {
-        bottom: -50%;
-    }
-}
-
-@media only screen and (max-width: 511px) {
-    .interaction-panel {
-        bottom: -82%;
-    }
-}
-
 .interaction-panel__form-inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 24px;
+}
+
+@media only screen and (max-width: 420px) {
+    .interaction-panel__form-submit {
+        flex-direction: column;
+    }
 }
 
 .mini-card {
@@ -776,6 +828,12 @@ body {
 
 .page-card {
     height: 560px;
+}
+
+@media only screen and (max-width: 520px) {
+    .page-card {
+        height: 420px;
+    }
 }
 
 .page-card__bg {
@@ -877,11 +935,15 @@ body {
 @media only screen and (max-width: 580px) {
     .region-cards {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 240px);
+        grid-template-rows: 1fr repeat(4, 200px);
     }
 
     .region-cards .region-info {
         grid-column: 1/2;
+    }
+
+    .region-cards .region-info__header {
+        flex-direction: column;
     }
 }
 
@@ -943,5 +1005,12 @@ body {
         grid-template-columns: 420px;
         grid-template-rows: repeat(4, 620px);
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .travel__cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 560px);
     }
 }
