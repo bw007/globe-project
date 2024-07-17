@@ -1,12 +1,10 @@
 - var rating = ["0+", "1+", "2+", "3+", "4+"]
 - var airlines = ["Emirated", "Fly Dubai", "Qatar", "Etihad"]
 - var trips = ["Round trip", "On Way", "Multi-City", "My Dates Are Flexible"]
-section.flight-filter.mt-30
-  .flight-filter__container.container.flex.justify-between.items-start
-    .filter-operation.flex.flex-col.gap-10
-      h4.text-xl.font-semibold Filter
-      +filter-range("Price", "$50", "$1200")
-      +filter-range("Departure Time", "12:01Am", "11:56Pm")
-      +filter-rating("Rating", ...rating)
-      +filter-checkbox("Airlines", ...airlines)
-      +filter-checkbox("Airlines", ...trips)
+.flights-filter__operation.flex.flex-col.gap-10.pr-25
+  h4.text-xl.font-semibold Filter
+  +filter-range("Price", "$50", "$1200")
+  +filter-range("Departure Time", "12:01Am", "11:56Pm")
+  +filter-rating("Rating", ...rating)
+  +filter-checkbox("Airlines", ...airlines)
+  +filter-checkbox("Trips", ...trips)
