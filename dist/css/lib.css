@@ -5862,6 +5862,14 @@
     background-color: #112211;
 }
 
+.bg-red {
+    background-color: #FF8682;
+}
+
+.text-red {
+    color: #FF8682;
+}
+
 .text-white {
     color: #FFFFFF;
 }
@@ -5908,4 +5916,8 @@
 
 .card-shadow {
     box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.0196078431);
+}
+
+.pointer {
+    cursor: pointer;
 }

@@ -1106,7 +1106,50 @@ body {
     }
 }
 
-.flight-filter__operation {
-    width: 350px;
-    max-width: 100%;
+.flights-filter__operation {
+    border-right: 1px solid rgba(0, 0, 0, 0.1254901961);
+    max-width: 350px;
+    width: 100%;
+}
+
+.flights-filter__data {
+    flex: 1;
+}
+
+.flights-data__tabs {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.flights-data__tabs .tab-item {
+    padding: 16px 18px;
+    cursor: pointer;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 300ms;
+}
+
+.flights-data__tabs .tab-item:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.0823529412);
+}
+
+.flights-data__tabs .tab-item:hover {
+    background-color: #CDEAE1;
+    border-color: transparent;
+}
+
+.flight-card__inner {
+    flex: 1;
+}
+
+.flight-card__body {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0823529412);
+}
+
+.flight-card__body input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+
+.flight-card__footer .btn__success {
+    flex: 1;
+    font-weight: 600 !important;
 }
