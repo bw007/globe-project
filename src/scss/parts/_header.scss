@@ -20,7 +20,9 @@
 
 .header-nav {
   height: 90px;
-
+  @include breakpoint-max (520px) {
+    height: 60px;
+  }
   &__link {
     &--active {
       position: relative;
@@ -93,11 +95,18 @@
   }
 
   &__interaction-panel {
+    left: 2rem;
+    right: 2rem;
+    bottom: -33%;
     @include breakpoint-max (960px) {
       bottom: -50% !important;
     }
     @include breakpoint-max (511px) {
       bottom: -82% !important;
+    }
+    @include breakpoint-max (480px) {
+      right: 1rem;
+      left: 1rem;
     }
     @include breakpoint-max (420px) {
       bottom: -105% !important;
@@ -105,11 +114,19 @@
   }
 }
 
-@include breakpoint-max (420px) {
+@include breakpoint-max (520px) {
   .header-hero {
     &__container {
-      
+      align-items: center;
     }
+    &__title, &__caption {
+      text-align: center;
+    }
+  }
+}
+
+@include breakpoint-max (420px) {
+  .header-hero {
     &__title {
       font-size: 28px;
       max-width: 300px;
