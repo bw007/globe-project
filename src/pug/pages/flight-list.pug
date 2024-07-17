@@ -1,0 +1,10 @@
+extends ../layouts/main.pug
+
+block main-content
+  main.main
+    include ../components/flight-list/_flight-list-interaction.pug
+    section.flights-filter.mt-30
+      .flights-filter__container.container.flex.justify-between.items-start.gap-9
+        include ../components/flight-list/_filter-operation.pug
+        include ../components/flight-list/_filtered-data.pug
+    section.space-y-20
