@@ -66,9 +66,12 @@
 
   @include breakpoint-max (580px) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 240px);
+    grid-template-rows: 1fr repeat(4, 200px);
     .region-info {
       grid-column: 1 / 2;
+      &__header {
+        flex-direction: column;
+      }
     }
   }
 }

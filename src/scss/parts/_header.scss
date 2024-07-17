@@ -91,4 +91,28 @@
   &__caption {
     line-height: 1.4;
   }
+
+  &__interaction-panel {
+    @include breakpoint-max (960px) {
+      bottom: -50% !important;
+    }
+    @include breakpoint-max (511px) {
+      bottom: -82% !important;
+    }
+    @include breakpoint-max (420px) {
+      bottom: -105% !important;
+    }
+  }
+}
+
+@include breakpoint-max (420px) {
+  .header-hero {
+    &__container {
+      
+    }
+    &__title {
+      font-size: 28px;
+      max-width: 300px;
+    }
+  }
 }

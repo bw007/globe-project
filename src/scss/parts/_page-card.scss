@@ -1,5 +1,8 @@
 .page-card {
   height: 560px;
+  @include breakpoint-max (520px) {
+    height: 420px;
+  }
   &__bg {
     background-size: cover;
     background-repeat: no-repeat;
