@@ -21,7 +21,7 @@
 .header-nav {
   height: 90px;
   @include breakpoint-max (520px) {
-    height: 60px;
+    height: 75px;
   }
   &__link {
     &--active {
@@ -64,13 +64,6 @@
     }
   }
 }
-
-// @include breakpoint-max (640px) {
-//   grid-template-columns: 420px;
-//   grid-template-rows: repeat(4, 620px);
-//   justify-content: center;
-// }
-
 
 .header-hero {
   &__container {
