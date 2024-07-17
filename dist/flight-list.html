@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe</title>
+    <link rel="stylesheet" href="./css/lib.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <nav class="header-nav flex items-center w-full card-shadow bg-white">
+        <div class="header-nav__container container flex justify-between items-center w-full h-full">
+          <div class="header-nav__links flex items-center gap-12 h-full"><a class="header-nav__link header-nav__link--active h-full flex items-center gap-2 text-sm font-semibold" href="index.html"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 text-sm font-semibold" href="stays.html"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div><a class="header-nav__logo flex items-center" href="index.html"><img src="./images/header/logo.svg" alt="Company logo" draggable="false" width="110" height="35"></a>
+          <div class="header-nav__auth header-auth flex items-center gap-4"><a class="header-nav__btn btn btn__text" href="#">Login</a><a class="header-nav__btn btn btn__dark" href="#">Sign up</a></div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="interaction mt-40">
+        <div class="interaction__container container">
+          <div class="interaction__panel interaction-panel flex flex-col gap-12 px-24 py-32">
+            <form class="interaction-panel__form flex gap-10 w-full">
+              <div class="interaction-panel__form-inner w-full">
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">From - To</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="Lahore - Karachi"/><img class="icon-sms" src="./images/icons/swap-horizontal.svg" alt="" draggable="false"/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">Trip</legend>
+                  <div class="select-wrap flex items-center justify-between">
+                    <select class="text-md font-regular pr-15 px-15 pt-10 pb-15" value="Return">
+                      <option value="Return">Return</option>
+                      <option value="Departure">Departure</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">Depart- Return</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="07 Nov 22 - 13 Nov 22"/><img class="icon-sms" src="./images/icons/calendar-dark.svg" alt="" draggable="false"/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">Passenger - Class</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Route" value="1 Passenger, Economy"/><img class="icon-sms" src="./images/icons/breifcase-dark.svg" alt="" draggable="false"/>
+                  </div>
+                </fieldset>
+              </div>
+              <button class="btn btn__success btn__xlarge w-fil mt-9 h-full"><img src="./images/icons/search-outline.svg"></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="flight-filter mt-30">
+        <div class="flight-filter__container container flex justify-between items-start">
+          <div class="filter-operation flex flex-col gap-10">
+            <h4 class="text-xl font-semibold">Filter</h4>
+            <div class="filter filter__range flex flex-col gap-7 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Price</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__line filter-point w-full bg-dark mt-6 relative"><span class="filter-point__left absolute"></span><span class="filter-point__right absolute"></span></div>
+              <div class="filter__count filter-count text-xs font-medium w-full flex justify-between"><span class="filter-count__left">$50</span><span class="filter-count__right">$1200</span></div>
+            </div>
+            <div class="filter filter__range flex flex-col gap-7 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Departure Time</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__line filter-point w-full bg-dark mt-6 relative"><span class="filter-point__left absolute"></span><span class="filter-point__right absolute"></span></div>
+              <div class="filter__count filter-count text-xs font-medium w-full flex justify-between"><span class="filter-count__left">12:01Am</span><span class="filter-count__right">11:56Pm</span></div>
+            </div>
+            <div class="filter filter__rating flex flex-col gap-6 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Rating</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__rating-options grid gap-5">
+                <button class="btn btn__small btn__plain">0+</button>
+                <button class="btn btn__small btn__plain">1+</button>
+                <button class="btn btn__small btn__plain">2+</button>
+                <button class="btn btn__small btn__plain">3+</button>
+                <button class="btn btn__small btn__plain">4+</button>
+              </div>
+            </div>
+            <div class="filter filter__checkbox flex flex-col gap-6 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Airlines</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__check-list flex flex-col gap-5">
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Emirated</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Fly Dubai</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Qatar</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Etihad</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter filter__checkbox flex flex-col gap-6 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Airlines</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__check-list flex flex-col gap-5">
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Round trip</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>On Way</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Multi-City</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>My Dates Are Flexible</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="space-y-20"></section>
+    </main>
+    <footer class="footer bg-success py-64">
+      <div class="footer__container container h-full">
+        <div class="w-full relative py-80">
+          <div class="footer__mailbox bg-teal rounded-20 px-24 py-20 w-full absolute">
+            <div class="flex flex-col gap-6">
+              <h1 class="text-5xl font-bold font-trade-gothic mb-6">Subscribe Newsletter</h1>
+              <p class="text-xl font-bold font-trade-gothic">The Travel</p><span class="text-md font-medium">Get inspired! Receive travel discounts, tips and behind the scenes stories.</span>
+              <div class="mailbox-bottom flex items-center gap-6 w-full">
+                <input class="input-easy text-md px-18 py-18" type="text" placeholder="Your email address" value=""/>
+                <button class="btn btn__dark btn__xlarge">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__inner flex items-start justify-between gap-32">
+          <div class="footer__socially flex flex-col gap-8"><a href="index.html"><img src="./images/footer/logo-2.svg" width="120" height="39"></a>
+            <div class="flex items-center justify-between"><a class="footer__link" href="#"><img src="./images/footer/facebook.svg"></a><a class="footer__link" href="#"><img src="./images/footer/twitter.svg"></a><a class="footer__link" href="#"><img src="./images/footer/youtube.svg"></a><a class="footer__link" href="#"><img src="./images/footer/instagram.svg"></a></div>
+          </div>
+          <div class="footer__links grid grid-cols-5 gap-4">
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Our Destinations</h4><a class="footer__link text-sm font-medium" href="#">Chiroqchi</a><a class="footer__link text-sm font-medium" href="#">Tarag'ay</a><a class="footer__link text-sm font-medium" href="#">Quruqsoy</a><a class="footer__link text-sm font-medium" href="#">Xorazm</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Our Activities</h4><a class="footer__link text-sm font-medium" href="#">Northern Lights</a><a class="footer__link text-sm font-medium" href="#">Cruising &amp; sailing</a><a class="footer__link text-sm font-medium" href="#">Multi-activities</a><a class="footer__link text-sm font-medium" href="#">Kayaing</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Travel Blogs</h4><a class="footer__link text-sm font-medium" href="#">Bali Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Sri Lanks Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Peru Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Bali Travel Guide</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">About Us</h4><a class="footer__link text-sm font-medium" href="#">Our Story</a><a class="footer__link text-sm font-medium" href="#">Work with us</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Contact Us</h4><a class="footer__link text-sm font-medium" href="#">Our Story</a><a class="footer__link text-sm font-medium" href="#">Work with us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

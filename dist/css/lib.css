@@ -5858,6 +5858,10 @@
     background-color: #8DD3BB;
 }
 
+.bg-dark {
+    background-color: #112211;
+}
+
 .text-white {
     color: #FFFFFF;
 }
