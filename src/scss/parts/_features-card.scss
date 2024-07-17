@@ -1,0 +1,30 @@
+.features-card {
+  padding-top: 290px;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+  @include breakpoint-max (605px) {
+    width: 75%;
+    margin: auto;
+  }
+  @include breakpoint-max (480px) {
+    width: 100%;
+  }
+  &__bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition-property: $transition-property-common;
+    transition-duration: $transition-duration-slower;
+    @include breakpoint-max (1185px) {
+      background-position: top;
+    }
+  }
+  &:hover .flight-card__bg{
+    transform: scale(1.1);
+  }
+}
