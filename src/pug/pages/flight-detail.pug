@@ -1,0 +1,20 @@
+extends ../layouts/main.pug
+
+block main-content
+  main.main
+    section.mt-45.mb-30
+      .container.w-full
+        +breadcrumbs("Turkey", "Istanbul", "CVK Park Bosphorus Hotel Istanbul")
+    section.flight-detail-head.mb-40
+      .flight-detail-head__container.container
+        include ../components/flight-detail/_flight-detail-head.pug
+    section.flight-detail-features.mb-40
+      .flight-detail-features__container.container
+        include ../components/flight-detail/_flight-detail-features.pug
+    section.flight-detail-policy.mb-40
+      .flight-corp-policy__container.container
+        include ../components/flight-detail/_flight-corp-policy.pug
+    section.flight-detail-cards.mb-60
+      .flight-detail-cards__container.container.flex.flex-col.gap-16
+        include ../components/flight-detail/_flight-detail-cards.pug
+    section.space-y-20
