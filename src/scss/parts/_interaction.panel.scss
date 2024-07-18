@@ -2,7 +2,10 @@
   border-radius: 16px;
   box-shadow: 0 4px 16px 0 #8DD3BB15;
   background-color: $color-white;
-  
+  @include breakpoint-max (520px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   &__title {
   }
   &__form {
@@ -10,8 +13,11 @@
   }
   &__form-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
+    @include breakpoint-max (520px) {
+      gap: 16px;
+    }
   }
   &__form-submit {
     @include breakpoint-max (420px) {
