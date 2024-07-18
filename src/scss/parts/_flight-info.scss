@@ -1,0 +1,88 @@
+.flight-info {
+  &__header {
+    @include breakpoint-max(375px) {
+      flex-direction: column;
+    }
+  }
+  &__body {
+    @include breakpoint-max(520px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+  &__owner {
+    @include breakpoint-max(620px) {
+      flex-direction: column;
+      padding: 6px 12px;
+      gap: 12px;
+      .flex {
+        gap: 0;
+      }
+      h4.text-2xl {
+        font-size: 18px;
+      }
+      span.text-sm {
+        font-size: 12px;
+      }
+    }
+    @include breakpoint-max(520px) {
+      flex-direction: row;
+      padding: 12px 16px;
+      .flex {
+        gap: 6px;
+      }
+    }
+  }
+  &__icons {
+    @include breakpoint-max(520px) {
+      width: 100%;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid $color-gray-300;
+      border-bottom: 1px solid $color-gray-300;
+    }
+    .flex {
+      &:not(:last-child) {
+        border-right: 1px solid $color-gray-300;
+      }
+      @include breakpoint-max(768px) {
+        padding: 8px 16px;
+      }
+      @include breakpoint-max(520px) {
+        border: none !important;
+      }
+      @include breakpoint-max(375px) {
+        padding: 6px 12px;
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+  &__footer {
+    @include breakpoint-max(1024px) {
+      gap: 24px;
+      .icon-xl {
+        width: 24px;
+      }
+    }
+    @include breakpoint-max(520px) {
+      flex-direction: column;
+    }
+    @include breakpoint-max(520px) {
+      gap: 8px;
+    }
+  }
+  &__footer-data {
+    @include breakpoint-max(768px) {
+      flex-direction: column;
+      gap: 0;
+    }
+    @include breakpoint-max(520px) {
+      flex-direction: row;
+      gap: 12px;
+    }
+  }
+}
