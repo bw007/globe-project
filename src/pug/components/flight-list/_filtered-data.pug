@@ -21,8 +21,20 @@
         h5.font-semibold Recommended
         img(src="./images/icons/chevron-down.svg")
   .flex.flex-col.gap-12.mb-5
-    +flight-order("./images/flight/fly-1.png", "$104", "Very Good", "4.2")
-    +flight-order("./images/flight/fly-2.png", "$104", "Very Good", "4.2")
-    +flight-order("./images/flight/fly-3.png", "$104", "Very Good", "4.2")
-    +flight-order("./images/flight/fly-4.png", "$104", "Very Good", "4.2")
+    +flight-order("./images/flight/fly-1.png", "4.2", "Very Good", "$104",
+      { interval: "12:00 pm - 01:28 pm", corp: "Emirates", type: "non stop", time: "2h 28m", route: "EWR-BNA"},
+      { interval: "12:00 pm - 01:28 pm", corp: "Emirates", type: "non stop", time: "2h 28m", route: "EWR-BNA"}
+    )
+    +flight-order("./images/flight/fly-2.png", "4.7", "Very Good", "$200",
+      { interval: "12:00 pm - 01:28 pm", corp: "Fly Dubai", type: "non stop", time: "2h 28m", route: "EWR-BNA"},
+      { interval: "12:00 pm - 01:28 pm", corp: "Fly Dubai", type: "non stop", time: "3h 21m", route: "EWR-BNA"}
+    )
+    +flight-order("./images/flight/fly-3.png", "4.3", "Very Good", "$104",
+      { interval: "12:00 pm - 01:28 pm", corp: "Qatar", type: "non stop", time: "2h 28m", route: "EWR-BNA"},
+      { interval: "12:00 pm - 01:28 pm", corp: "Qatar", type: "non stop", time: "3h 21m", route: "EWR-BNA"}
+    )
+    +flight-order("./images/flight/fly-4.png", "4.9", "Very Good", "$114",
+      { interval: "12:00 pm - 01:28 pm", corp: "Etihad", type: "non stop", time: "2h 28m", route: "EWR-BNA"},
+      { interval: "12:00 pm - 01:28 pm", corp: "Etihad", type: "non stop", time: "3h 21m", route: "EWR-BNA"}
+    )
   button.btn.btn__dark.btn__large.w-full Show more results
