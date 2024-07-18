@@ -1,9 +1,9 @@
-mixin page-card(pic="", title="", caption="", btn="", icon="")
+mixin page-card(pic="", title="", caption="", btn="", icon="", link="")
   .page-card.flex.flex-col.items-center.justify-end.gap-6.overflow-hidden.rounded-20.px-24.py-24.relative
     .page-card__bg.absolute.z-0(style=`background-image: url(${pic})`)
     .flex.flex-col.items-center.gap-6.z-10
       h3.text-5xl.font-bold.font-trade-gothic.text-white= title
       p.text-md.text-white.text-center= caption
-      a.btn.btn__success.btn__large
+      a.btn.btn__success.btn__large(href= link)
         img.icon-sm(src= icon)
         = btn
