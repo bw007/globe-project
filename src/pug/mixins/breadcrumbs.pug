@@ -1,0 +1,5 @@
+mixin breadcrumbs(...items)
+  .breadcrumbs.flex.items-center.text-sm.font-medium.gap-2
+    each item in items
+      a.breadcrumbs__item.text-red.flex.items-center.gap-2(href="#")= item
+        img.icon-sm(src="./images/icons/chevron-right.svg")
