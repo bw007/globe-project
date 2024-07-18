@@ -67,6 +67,23 @@
   }
 }
 
+@for $i from 1 through 100 {
+  .m {
+    &x {
+      &-#{$i} {
+        margin-left: $i + px;
+        margin-right: $i + px;
+      }
+    }
+    &y {
+      &-#{$i} {
+        margin-top: $i + px;
+        margin-bottom: $i + px;
+      }
+    }
+  }
+}
+
 @for $i from 1 through 40 {
   .space {
     &-x {
@@ -1203,4 +1220,11 @@
 
 .pointer {
   cursor: pointer;
+}
+
+.border-gray {
+  border: 1px solid $color-gray-900;
+}
+.border-green {
+  border: 1px solid $color-green-400;
 }
