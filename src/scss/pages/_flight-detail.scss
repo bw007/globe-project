@@ -1,0 +1,66 @@
+.flight-detail-head {
+  .btn__success {
+    font-weight: 600 !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    @include breakpoint-max(520px) {
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+  }
+  &__rating {
+    @include breakpoint-max(475px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__btns {
+    @include breakpoint-max(620px) {
+      gap: 10px;
+      button {
+        height: 38px;
+      }
+      img {
+        width: 16px;
+      }
+    }
+    @include breakpoint-max(475px) {
+      flex-direction: column-reverse;
+      align-items: flex-end;      
+    }
+  }
+}
+
+.flight-detail-features {
+  &__header {
+    @include breakpoint-max(768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .flex.gap-8 {
+      @include breakpoint-max(375px) {
+        flex-direction: column;
+        width: 100%;
+        gap: 6px;
+        align-items: flex-start;
+      }
+    }
+  }
+  &__thumbnails {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+.flight-detail-policy {
+  &__desc {
+    @include breakpoint-max(640px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+}
