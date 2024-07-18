@@ -5918,6 +5918,10 @@
     box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.0196078431);
 }
 
+.card-shadow-xl {
+    box-shadow: 0 4px 16px 0 rgba(141, 211, 187, 0.0823529412);
+}
+
 .pointer {
     cursor: pointer;
 }

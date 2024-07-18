@@ -622,9 +622,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 511px) {
+@media only screen and (max-width: 551px) {
     .header-hero__interaction-panel {
-        bottom: -82% !important;
+        bottom: -80% !important;
     }
 }
 
@@ -807,10 +807,23 @@ body {
     background-color: #FFFFFF;
 }
 
+@media only screen and (max-width: 520px) {
+    .interaction-panel {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 .interaction-panel__form-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
+}
+
+@media only screen and (max-width: 520px) {
+    .interaction-panel__form-inner {
+        gap: 16px;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -1106,10 +1119,30 @@ body {
     }
 }
 
+@media only screen and (max-width: 640px) {
+    .flights-filter__container {
+        flex-direction: column;
+    }
+}
+
 .flights-filter__operation {
     border-right: 1px solid rgba(0, 0, 0, 0.1254901961);
     max-width: 350px;
     width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .flights-filter__operation {
+        max-width: 280px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .flights-filter__operation {
+        max-width: 100%;
+        border: none;
+        padding-right: 0;
+    }
 }
 
 .flights-filter__data {
@@ -1118,13 +1151,31 @@ body {
 
 .flights-data__tabs {
     grid-template-columns: repeat(4, 1fr);
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 300ms;
+}
+
+@media only screen and (max-width: 1024px) {
+    .flights-data__tabs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .flights-data__tabs {
+        grid-template-columns: 1fr;
+    }
 }
 
 .flights-data__tabs .tab-item {
     padding: 16px 18px;
     cursor: pointer;
-    transition-property: background-color, border-color, color, fill, stroke;
-    transition-duration: 300ms;
+}
+
+@media only screen and (max-width: 480px) {
+    .flights-data__tabs .tab-item {
+        padding: 12px;
+    }
 }
 
 .flights-data__tabs .tab-item:not(:last-child) {
@@ -1136,17 +1187,111 @@ body {
     border-color: transparent;
 }
 
+@media only screen and (max-width: 840px) {
+    .flights-data__sort-info h5, .flights-data__sort-info span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .flights-data__sort-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .flight-card {
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .flight-card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .flight-card {
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .flight-card__header {
+        flex-direction: column;
+    }
+
+    .flight-card__header .items-end.gap-1 {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.flight-card__img {
+    width: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: auto;
+}
+
 .flight-card__inner {
     flex: 1;
 }
 
 .flight-card__body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.0823529412);
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1024px) {
+    .flight-card__body .items-start.gap-5 {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .flight-card__body .items-start.gap-5 {
+        flex-direction: column;
+    }
+}
+
+.flight-card__body .flex-col.gap-2 {
+    gap: 2px;
 }
 
 .flight-card__body input[type=checkbox] {
     width: 18px;
     height: 18px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .flight-card__body input[type=checkbox] {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .flight-card__body p.mr-25 {
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .flight-card__body h5.text-md {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .flight-card__body span.text-sm {
+        font-size: 12px;
+    }
 }
 
 .flight-card__footer .btn__success {
