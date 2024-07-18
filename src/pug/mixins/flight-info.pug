@@ -1,0 +1,26 @@
+mixin flight-info(date="", term="", owner={}, time={}, icons=[])
+  .flight-info.flex.flex-col.items-center.gap-12.bg-white.card-shadow-xl.px-24.py-24.rounded-xl
+    .flight-info__header.flex.justify-between.gap-3.w-full
+      h4.text-xl.font-trade-gothic.font-bold= date
+      p.text-xl.font-medium= term
+    .flight-info__body.flex.items-center.justify-between.w-full
+      .flex.items-center.justify-between.gap-8.px-24.py-14.border-green.rounded-lg
+        img(src= owner.logo)
+        .flex.flex-col.gap-2
+          h4.text-2xl.font-semibold= owner.name
+          span.text-sm.font-medium= owner.plane
+      .flight-info__icons.flex.items-center
+        each i in icons
+          .flex.items-center.justify.center.px-24.py-12
+            img(src= i)
+    .flight-info__footer.flex.items-center.gap-28
+      .flex.items-center.gap-4
+        h4.text-2xl.font-semibold= time.start
+        span.text-md.font-medium.mt-4= time.startPoint
+      .flex.items-center.gap-6
+        img(src="./images/icons/line-to-left.svg")
+        img.icon-xl(src="./images/icons/airplane-dark.svg")
+        img(src="./images/icons/line-to-right.svg")
+      .flex.items-center.gap-4
+        h4.text-2xl.font-semibold= time.end
+        span.text-md.font-medium.mt-4= time.endPoint
