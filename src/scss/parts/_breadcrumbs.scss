@@ -1,0 +1,22 @@
+.breadcrumbs {
+  @include breakpoint-max(480px) {
+    display: none;
+  }
+  &__list {
+    @include breakpoint-max(640px) {
+      font-size: 12px;
+    }
+  }
+  &__item {
+    opacity: 0.75;
+    &:last-child {
+      color: $color-gray-900;
+      img {
+        display: none;
+      }
+    } 
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
