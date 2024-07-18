@@ -1,5 +1,6 @@
 .interaction {
   &__container {}
+
   &__panel {
     form {
       @include breakpoint-max(640px) {
@@ -10,48 +11,150 @@
 }
 
 .flights-filter {
-  &__container {}
+  &__container {
+    @include breakpoint-max(640px) {
+      flex-direction: column;
+    }
+  }
+
   &__operation {
     border-right: 1px solid #00000020;
     max-width: 350px;
     width: 100%;
+    @include breakpoint-max(1024px) {
+      max-width: 280px;
+    }
+    @include breakpoint-max(640px) {
+      max-width: 100%;
+      border: none;
+      padding-right: 0;
+    }
   }
+
   &__data {
     flex: 1;
   }
 }
 
 .flights-data {
+  
   &__header {}
+
   &__tabs {
     grid-template-columns: repeat(4, 1fr);
+    transition-property: $transition-property-color;
+    transition-duration: $transition-duration-slow;
+
+    @include breakpoint-max(1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint-max(340px) {
+      grid-template-columns: 1fr;
+    }
     .tab-item {
+      padding: 16px 18px;
+      cursor: pointer;
+      @include breakpoint-max(480px) {
+        padding: 12px;
+      }
       &:not(:last-child) {
         border-right: 1px solid #00000015;
       }
-      padding: 16px 18px;
-      cursor: pointer;
-      transition-property: $transition-property-color;
-      transition-duration: $transition-duration-slow;
+
       &:hover {
         background-color: $color-green-200;
         border-color: transparent;
       }
     }
+
+
+  }
+  &__sort-info {
+    @include breakpoint-max(840px) {
+      h5, span {
+        font-size: 12px;
+      }
+    }
+    @include breakpoint-max(380px) {
+      flex-direction: column;
+      gap: 5px;
+    }
   }
 }
 
 .flight-card {
+  @include breakpoint-max(1024px) {
+    gap: 15px;
+  }
+  @include breakpoint-max(840px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include breakpoint-max(375px) {
+    padding: 12px;
+  }
+  &__header {
+    @include breakpoint-max(340px) {
+      flex-direction: column;
+      .items-end.gap-1 {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+    
+  }
+  &__img {
+    width: auto;
+    object-fit: cover;
+    height: auto;
+  }
+
   &__inner {
     flex: 1;
   }
+
   &__body {
+    border-bottom: 1px solid #00000015;
+    white-space: nowrap;
+
+    .items-start.gap-5 {
+      @include breakpoint-max(1024px) {
+        gap: 10px;
+      }
+      @include breakpoint-max(340px) {
+        flex-direction: column;
+      }
+    }
+    .flex-col.gap-2 {
+      gap: 2px;
+    }
     input[type="checkbox"] {
       width: 18px;
       height: 18px;
+      @include breakpoint-max(1024px) {
+        width: 14px;
+        height: 14px;
+      }
     }
-    border-bottom: 1px solid #00000015;
+    p.mr-25 {
+      @include breakpoint-max(1024px) {
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+    h5.text-md {
+      @include breakpoint-max(1024px) {
+        font-size: 12px;
+      }
+    }
+    span.text-sm {
+      @include breakpoint-max(1024px) {
+        font-size: 12px;
+      }
+    }
   }
+
   &__footer {
     .btn__success {
       flex: 1;
