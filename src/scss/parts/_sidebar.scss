@@ -1,0 +1,30 @@
+.sidebar {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999;
+  top: -300px;
+  left: 0;
+  right: 0;
+  transition-property: top;
+  transition-duration: $transition-duration-normal;
+  &__close {
+    margin-left: auto;
+    width: 32px;
+    height: 32px;
+  }
+  &__open {
+    top: 0;
+  }
+}
+
+.sidebar-overlay {
+  z-index: 999;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000040;
+}
