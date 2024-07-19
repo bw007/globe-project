@@ -18,6 +18,8 @@ html(lang="en")
     link(rel="stylesheet" href="./css/lib.min.css")
     link(rel="stylesheet" href="./css/style.min.css")
   body.wrapper
+    include ../components/_sidebar.pug
+    .sidebar-overlay.fixed.hidden
     block content
     include ../components/_footer.pug
     script(src="./js/main.min.js", type="module")
