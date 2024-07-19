@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="wrapper">
+    <aside class="sidebar fixed z-10 w-full pt-35 pb-50">
+      <div class="sidebar__container container flex flex-col items-center gap-6">
+        <div class="sidebar__close flex justify-center items-center pointer"><img class="icon-lg" src="./images/icons/close-outline.svg"></div>
+        <div class="sidebar__links flex items-center flex-col gap-2 h-full"><a class="header-nav__link header-nav__link--active h-full flex items-center gap-2 py-10 text-sm font-semibold" href="index.html"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 py-10 text-sm font-semibold" href="stays.html"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div>
+        <div class="sidebar__auth header-auth flex items-center gap-2"><a class="header-nav__btn btn btn__text" href="#">Login</a><a class="header-nav__btn btn btn__dark btn__small" href="#">Sign up</a></div>
+      </div>
+    </aside>
+    <div class="sidebar-overlay fixed hidden"></div>
     <header class="header">
       <nav class="header-nav flex items-center w-full card-shadow bg-white">
         <div class="header-nav__container container flex justify-between items-center w-full h-full">
           <div class="header-nav__links flex items-center gap-12 h-full"><a class="header-nav__link header-nav__link--active h-full flex items-center gap-2 text-sm font-semibold" href="index.html"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 text-sm font-semibold" href="stays.html"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div><a class="header-nav__logo flex items-center" href="index.html"><img src="./images/header/logo.svg" alt="Company logo" draggable="false" width="110" height="35"></a>
           <div class="header-nav__auth header-auth flex items-center gap-4"><a class="header-nav__btn btn btn__text" href="#">Login</a><a class="header-nav__btn btn btn__dark" href="#">Sign up</a></div>
+          <div class="header-nav__bar3 pointer justify-center items-center"><img src="./images/icons/menu-dark.svg"></div>
         </div>
       </nav>
       <div class="header__hero header__hero--stays header-hero">
