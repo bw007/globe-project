@@ -13,10 +13,17 @@
   }
   &__form-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+    @include breakpoint-max (1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint-max (768px) {
+      grid-template-columns: 1fr 1fr;
+    }
     @include breakpoint-max (520px) {
-      gap: 16px;
+      grid-template-columns: 1fr;
+      gap: 15px;
     }
   }
   &__form-submit {

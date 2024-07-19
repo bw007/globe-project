@@ -1,16 +1,15 @@
 .main {
   &__space-1 {
-    @include breakpoint-max (960px) {
+    @include breakpoint-max (1024px) {
       height: 350px;
     }
-    @include breakpoint-max (511px) {
-      height: 550px;
+    @include breakpoint-max (520px) {
+      height: 520px;
     }
   }
 }
 
 .places {
-  
   &__cards {
     .mini-card {
       background-color: $color-white;
@@ -40,21 +39,6 @@
 .travel {
   &__cards {
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    // @include breakpoint-max (1180px) {
-    //   grid-template-columns: repeat(3, 1fr);
-    // }
-    // @include breakpoint-max (920px) {
-    //   grid-template-columns: repeat(2, 1fr);
-    // }
-
-    // @include breakpoint-max (640px) {
-    //   grid-template-columns: 420px;
-    //   justify-content: center;
-    // }
-
-    // @include breakpoint-max (480px) {
-    //   grid-template-columns: 1fr;
-    // }
   }
 }
 
