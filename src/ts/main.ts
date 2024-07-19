@@ -1,4 +1,11 @@
-// import { handleScroll } from './parts/navbar';
+function handleScroll() {
+  const navbar = document.querySelector(".header-nav") as HTMLElement;
 
-window.addEventListener('scroll', handleScroll);
-console.log(12);
+  if (window.scrollY > 100) {
+    navbar.classList.add("fixed");
+  } else {
+    navbar.classList.remove("fixed");
+  }
+  console.log(navbar);
+}
+handleScroll()
