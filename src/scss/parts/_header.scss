@@ -20,6 +20,14 @@
 
 .header-nav {
   height: 90px;
+  top: -90px;
+  transition-property: top;
+  transition-duration: 0.25s;
+  z-index: 9999;
+  &__fixed {
+    position: fixed !important;
+    top: 0 !important;
+  }
   @include breakpoint-max (520px) {
     height: 75px;
   }
@@ -50,8 +58,6 @@
       color: $color-green-500;
     }
   }
-
-
 }
 
 @include breakpoint-max (920px) {
@@ -91,10 +97,10 @@
     left: 2rem;
     right: 2rem;
     bottom: -33%;
-    @include breakpoint-max (960px) {
+    @include breakpoint-max (1024px) {
       bottom: -50% !important;
     }
-    @include breakpoint-max (551px) {
+    @include breakpoint-max (520px) {
       bottom: -80% !important;
     }
     @include breakpoint-max (480px) {
@@ -102,7 +108,7 @@
       left: 1rem;
     }
     @include breakpoint-max (420px) {
-      bottom: -105% !important;
+      bottom: -100% !important;
     }
   }
 }
