@@ -9,7 +9,7 @@ function handleScroll(): void {
       header?.classList.add("pt-90");
     } else if(window.scrollY > 200 && window.innerWidth < 520) {
       navbar?.classList.add("header-nav__fixed");
-      header?.classList.add("pt-90");
+      header?.classList.add("pt-75");
     } else {
       navbar?.classList.remove("header-nav__fixed");
       header?.classList.remove("pt-75", "pt-90");

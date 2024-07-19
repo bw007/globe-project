@@ -10,7 +10,7 @@ function handleScroll() {
         }
         else if (window.scrollY > 200 && window.innerWidth < 520) {
             navbar === null || navbar === void 0 ? void 0 : navbar.classList.add("header-nav__fixed");
-            header === null || header === void 0 ? void 0 : header.classList.add("pt-90");
+            header === null || header === void 0 ? void 0 : header.classList.add("pt-75");
         }
         else {
             navbar === null || navbar === void 0 ? void 0 : navbar.classList.remove("header-nav__fixed");
