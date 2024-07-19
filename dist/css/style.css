@@ -579,6 +579,15 @@ input[type=checkbox]:checked + span {
 
 .header-nav {
     height: 90px;
+    top: -90px;
+    transition-property: top;
+    transition-duration: 0.25s;
+    z-index: 9999;
+}
+
+.header-nav__fixed {
+    position: fixed !important;
+    top: 0 !important;
 }
 
 @media only screen and (max-width: 520px) {
@@ -649,13 +658,13 @@ input[type=checkbox]:checked + span {
     bottom: -33%;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1024px) {
     .header-hero__interaction-panel {
         bottom: -50% !important;
     }
 }
 
-@media only screen and (max-width: 551px) {
+@media only screen and (max-width: 520px) {
     .header-hero__interaction-panel {
         bottom: -80% !important;
     }
@@ -670,7 +679,7 @@ input[type=checkbox]:checked + span {
 
 @media only screen and (max-width: 420px) {
     .header-hero__interaction-panel {
-        bottom: -105% !important;
+        bottom: -100% !important;
     }
 }
 
@@ -749,7 +758,7 @@ input[type=checkbox]:checked + span {
 
 @media only screen and (max-width: 520px) {
     .footer__mailbox {
-        top: -220px;
+        top: -180px;
     }
 
     .footer__mailbox .mailbox-bottom {
@@ -763,6 +772,12 @@ input[type=checkbox]:checked + span {
 
     .footer__mailbox .mailbox-bottom input, .footer__mailbox .mailbox-bottom button {
         height: 36px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .footer__mailbox {
+        padding: 16px;
     }
 }
 
@@ -849,13 +864,26 @@ input[type=checkbox]:checked + span {
 
 .interaction-panel__form-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .interaction-panel__form-inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .interaction-panel__form-inner {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 520px) {
     .interaction-panel__form-inner {
-        gap: 16px;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
 
@@ -1218,15 +1246,15 @@ input[type=checkbox]:checked + span {
     }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1024px) {
     .main__space-1 {
         height: 350px;
     }
 }
 
-@media only screen and (max-width: 511px) {
+@media only screen and (max-width: 520px) {
     .main__space-1 {
-        height: 550px;
+        height: 520px;
     }
 }
 
