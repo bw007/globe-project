@@ -23,10 +23,14 @@
   top: -90px;
   transition-property: top;
   transition-duration: 0.25s;
-  z-index: 9999;
+  z-index: 99;
   &__fixed {
     position: fixed !important;
     top: 0 !important;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
   @include breakpoint-max (520px) {
     height: 75px;
@@ -58,9 +62,17 @@
       color: $color-green-500;
     }
   }
+  &__bar3 {
+    display: none;
+    width: 32px;
+    height: 32px;
+    @include breakpoint-max(768px) {
+      display: flex;
+    }
+  }
 }
 
-@include breakpoint-max (920px) {
+@include breakpoint-max (768px) {
   .header-nav {
     &__links {
       display: none;
