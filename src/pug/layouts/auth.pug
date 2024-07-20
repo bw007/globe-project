@@ -1,0 +1,15 @@
+include ../mixins/input.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Globe
+    link(rel="stylesheet" href="./css/lib.min.css")
+    link(rel="stylesheet" href="./css/style.min.css")
+  body.wrapper
+    .auth
+      .auth__container.container.py-100.grid.grid-cols-2.gap-32
+        block content
+    script(src="./js/main.min.js", type="module")
