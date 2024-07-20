@@ -1,0 +1,22 @@
+.login-signup {
+  &__separator {
+    height: 1px;
+    background-color: #00000030;
+    &::after {
+      content: "Or";
+      font-size: $text-md;
+      font-weight: $font-medium;
+      width: 60px;
+      height: 20px;
+      background-color: $color-white;
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+      right: calc(50% - 30px);
+      top: -8px;
+    }
+  }
+  &__social {
+    grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+  }
+}
