@@ -2,7 +2,7 @@ mixin payment-method(...items)
   .payment-methods.bg-white.card-shadow-xl.rounded-xl.px-24.py-24.flex.flex-col.gap-8
     each item in items
       input(type="radio", name="pay", id= item.id, checked= item.checked)
-      label.payment-methods__option.flex.items-center.justify-between.gap-12.py-20.px-20.rounded-xl(for= item.id)
+      label.payment-methods__option.flex.items-center.justify-between.gap-12.py-20.px-20.rounded-xl.pointer(for= item.id)
         .flex.flex-col.gap-4
           p.text-md.font-bold.font-trade-gothic= item.title
           p.text-sm= item.desc

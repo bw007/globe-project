@@ -6,22 +6,21 @@ block main-content
       .container.w-full
         +breadcrumbs("Turkey", "Istanbul", "CVK Park Bosphorus Hotel Istanbul")
     .container
-      .book-details.flex.items-start.gap-12
-        section.book-details__info.flex.flex-col.gap-12.mb-40
-          .book-details__info-header
-            +flight-info(
-              "Return Wed, Dec 8",
-              "2h 28m",
-              { logo: "./images/flight-detail/em-1.png", name: "Emirates", plane: "Airbus A320" },
-              { start: "12:00 pm", startPoint: "Newark(EWR)", end: "14:00 pm", endPoint: "Newark(EWR)" },
-              [
-                "./images/icons/airplane-dark.svg",
-                "./images/icons/wifi-dark.svg",
-                "./images/icons/spedometer.svg",
-                "./images/icons/food.svg",
-                "./images/icons/recline.svg"
-              ]
-            )
+      .book-details.grid.items-start.gap-12
+        section.book-details__info.flex.flex-col.gap-12
+          +flight-info(
+            "Return Wed, Dec 8",
+            "2h 28m",
+            { logo: "./images/flight-detail/em-1.png", name: "Emirates", plane: "Airbus A320" },
+            { start: "12:00 pm", startPoint: "Newark(EWR)", end: "14:00 pm", endPoint: "Newark(EWR)" },
+            [
+              "./images/icons/airplane-dark.svg",
+              "./images/icons/wifi-dark.svg",
+              "./images/icons/spedometer.svg",
+              "./images/icons/food.svg",
+              "./images/icons/recline.svg"
+            ]
+          )
           +payment-method(
             { 
               title: "Pay in full",

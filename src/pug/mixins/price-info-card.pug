@@ -1,14 +1,14 @@
 mixin price-info-card()
   .price-info-card.bg-white.card-shadow-xl.rounded-xl.px-24.py-24.flex.flex-col.gap-3
-    .price-info-card__header.flex.items-center.gap-10
+    .price-info-card__header.flex.items-center.flex-wrap.gap-10
       img(src="./images/booking-detail/thumb.png")
       .flex.flex-col.gap-2
         p.text-md.font-medium Economy
         h4.text-xl.font-semibold Emirates A380 Airbus
-        .flight-detail-head__rating.flex.items-center.flex-wrap.gap-2.text-xs.mt-15
+        .flight-detail-head__rating.flex.items-center.gap-2.text-xs.mt-15
           button.btn.btn__plain.btn__small 4.2
-          p.font-semibold Very Good
-          span 54 reviews
+          p.font-semibold.whitespace-nowrap Very Good
+          span.whitespace-nowrap 54 reviews
     hr
     p.font-medium.text-md
       | Your booking is protected by
