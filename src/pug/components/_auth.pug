@@ -1,10 +1,17 @@
-.login-signup.bg-white.card-shadow-xl.rounded-xl.px-24.py-24.flex.flex-col.gap-8
-  p.login-signup__prompt Login or Sign up to book
-  input.login-signup__input(type="text" placeholder="Phone Number")
-  button.login-signup__button Continue
-  p.login-signup__or Or
-  .login-signup__social
-    button.login-signup__social-button Facebook
-    button.login-signup__social-button Google
-    button.login-signup__social-button Apple
-  button.login-signup__email Continue with email
+.login-signup.bg-white.card-shadow-xl.rounded-xl.px-24.py-28.flex.flex-col.gap-8
+  h4.login-signup__prompt.text-xl.font-bold.font-trade-gothic Login or Sign up to book
+  +easy-input("text", "Phone Number")
+  span.text-sm We'll call or text you to confirm your number. Standard message and data rates apply.
+    a.font-semibold(href="#")  Privacy Policy
+  button.login-signup__button.btn.btn__success.btn__large Continue
+  p.login-signup__separator.w-full.relative.my-10
+  .login-signup__social.grid.gap-5
+    button.login-signup__social-button.btn.btn__plain.btn__large
+      img(src="./images/icons/facebook.svg", alt="Facebook")
+    button.login-signup__social-button.btn.btn__plain.btn__large
+      img(src="./images/icons/google.svg", alt="Google")
+    button.login-signup__social-button.btn.btn__plain.btn__large
+      img(src="./images/icons/apple.svg", alt="Apple")
+  button.login-signup__email.btn.btn__plain.btn__large
+    img(src="./images/icons/mail.svg", alt="")
+    | Continue with email
