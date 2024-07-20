@@ -1,0 +1,13 @@
+.price-info-card {
+  max-width: 450px;
+  width: 100%;
+  hr {
+    height: 1px;
+    width: 100%;
+    background-color: #00000020;
+    box-shadow: none;
+    border: none;
+  }
+  &__container {}
+  &__details {}
+}
