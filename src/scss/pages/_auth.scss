@@ -1,0 +1,54 @@
+.auth {
+  &__container {
+    @include breakpoint-max(1024px) {
+      gap: 40px;
+    }
+    @include breakpoint-max(910px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__inner {
+    width: 100%;
+    @include breakpoint-max(1024px) {
+      gap: 20px;
+    }
+    @include breakpoint-max(910px) {
+      max-width: 520px;
+      margin: auto;
+    }
+  }
+  &__decor {
+    object-fit: cover;
+    width: 100%;
+    @include breakpoint-max(910px) {
+      display: none;
+    }
+  }
+  &__form {
+    input {
+      background-color: transparent;
+    }
+    @include breakpoint-max(1024px) {
+      gap: 10px;
+    }
+  }
+  &__separator {
+    height: 1px;
+    background-color: #00000030;
+    &::after {
+      content: "Or login with";
+      font-size: $text-sm;
+      width: auto;
+      height: 20px;
+      padding: 0 20px;
+      background-color: $color-gray-200;
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+      top: -8px;
+    }
+  }
+  &__social {
+    
+  }
+}
