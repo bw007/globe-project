@@ -1,3 +1,10 @@
 .book-details {
+  grid-template-columns: auto auto;
+  @include breakpoint-max(768px) {
+    grid-template-columns: 1fr;
+    .price-info-card {
+    order: -1;
+  }
+  }
   
 }
