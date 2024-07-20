@@ -33,42 +33,40 @@
         </div>
       </section>
       <div class="container">
-        <div class="book-details flex items-start gap-12">
-          <section class="book-details__info flex flex-col gap-12 mb-40">
-            <div class="book-details__info-header">
-              <div class="flight-info flex flex-col items-center gap-12 bg-white card-shadow-xl px-24 py-24 rounded-xl">
-                <div class="flight-info__header flex justify-between gap-3 w-full">
-                  <h4 class="text-xl font-trade-gothic font-bold">Return Wed, Dec 8</h4>
-                  <p class="text-xl font-medium">2h 28m</p>
-                </div>
-                <div class="flight-info__body flex items-center justify-between w-full">
-                  <div class="flight-info__owner flex items-center justify-between gap-8 px-24 py-14 border-green rounded-lg"><img src="./images/flight-detail/em-1.png"/>
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-2xl font-semibold">Emirates</h4><span class="text-sm font-medium">Airbus A320</span>
-                    </div>
-                  </div>
-                  <div class="flight-info__icons flex items-center">
-                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/airplane-dark.svg"/></div>
-                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/wifi-dark.svg"/></div>
-                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/spedometer.svg"/></div>
-                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/food.svg"/></div>
-                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/recline.svg"/></div>
+        <div class="book-details grid items-start gap-12">
+          <section class="book-details__info flex flex-col gap-12">
+            <div class="flight-info flex flex-col items-center gap-12 bg-white card-shadow-xl px-24 py-24 rounded-xl">
+              <div class="flight-info__header flex justify-between gap-3 w-full">
+                <h4 class="text-xl font-trade-gothic font-bold">Return Wed, Dec 8</h4>
+                <p class="text-xl font-medium">2h 28m</p>
+              </div>
+              <div class="flight-info__body flex items-center flex-wrap justify-between gap-8 w-full">
+                <div class="flight-info__owner flex items-center justify-between gap-8 px-24 py-14 border-green rounded-lg"><img src="./images/flight-detail/em-1.png"/>
+                  <div class="flex flex-col gap-2">
+                    <h4 class="text-2xl font-semibold">Emirates</h4><span class="text-sm font-medium">Airbus A320</span>
                   </div>
                 </div>
-                <div class="flight-info__footer flex items-center gap-28">
-                  <div class="flight-info__footer-data flex items-center gap-4">
-                    <h4 class="text-2xl font-semibold">12:00 pm</h4><span class="text-md font-medium mt-4">Newark(EWR)</span>
-                  </div>
-                  <div class="flex items-center gap-6"><img src="./images/icons/line-to-left.svg"/><img class="icon-xl" src="./images/icons/airplane-dark.svg"/><img src="./images/icons/line-to-right.svg"/></div>
-                  <div class="flight-info__footer-data flex items-center gap-4">
-                    <h4 class="text-2xl font-semibold">14:00 pm</h4><span class="text-md font-medium mt-4">Newark(EWR)</span>
-                  </div>
+                <div class="flight-info__icons flex items-center">
+                  <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/airplane-dark.svg"/></div>
+                  <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/wifi-dark.svg"/></div>
+                  <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/spedometer.svg"/></div>
+                  <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/food.svg"/></div>
+                  <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/recline.svg"/></div>
+                </div>
+              </div>
+              <div class="flight-info__footer flex justify-evenly items-center gap-4 w-full">
+                <div class="flight-info__footer-data flex items-center justify-center gap-2">
+                  <h4 class="whitespace-nowrap text-2xl font-semibold">12:00 pm</h4><span class="text-md font-medium mt-2">Newark(EWR)</span>
+                </div>
+                <div class="flex items-center gap-6"><img src="./images/icons/line-to-left.svg"/><img class="icon-xl" src="./images/icons/airplane-dark.svg"/><img src="./images/icons/line-to-right.svg"/></div>
+                <div class="flight-info__footer-data flex items-center justify-center gap-2">
+                  <h4 class="whitespace-nowrap text-2xl font-semibold">14:00 pm</h4><span class="text-md font-medium mt-2">Newark(EWR)</span>
                 </div>
               </div>
             </div>
             <div class="payment-methods bg-white card-shadow-xl rounded-xl px-24 py-24 flex flex-col gap-8">
               <input type="radio" name="pay" id="full" checked="checked"/>
-              <label class="payment-methods__option flex items-center justify-between gap-12 py-20 px-20 rounded-xl" for="full">
+              <label class="payment-methods__option flex items-center justify-between gap-12 py-20 px-20 rounded-xl pointer" for="full">
                 <div class="flex flex-col gap-4">
                   <p class="text-md font-bold font-trade-gothic">Pay in full</p>
                   <p class="text-sm">Pay the total and you are all set</p>
@@ -76,7 +74,7 @@
                 <div class="flex justify-center items-center circle rounded-full"></div>
               </label>
               <input type="radio" name="pay" id="part"/>
-              <label class="payment-methods__option flex items-center justify-between gap-12 py-20 px-20 rounded-xl" for="part">
+              <label class="payment-methods__option flex items-center justify-between gap-12 py-20 px-20 rounded-xl pointer" for="part">
                 <div class="flex flex-col gap-4">
                   <p class="text-md font-bold font-trade-gothic">Pay part now, part later</p>
                   <p class="text-sm">Pay $207.43 now, and the rest ($207.43) will be automatically charged to the same payment method on Nov 14, 2022. No extra fees.</p>
@@ -85,27 +83,27 @@
               </label><a class="text-xs font-medium px-20" href="#">More info</a>
             </div>
             <!-- Login-->
-            <div class="login-signup bg-white card-shadow-xl rounded-xl px-24 py-24 flex flex-col gap-8">
-              <p class="login-signup__prompt">Login or Sign up to book</p>
-              <input class="login-signup__input" type="text" placeholder="Phone Number">
-              <button class="login-signup__button">Continue</button>
-              <p class="login-signup__or">Or</p>
-              <div class="login-signup__social">
-                <button class="login-signup__social-button">Facebook</button>
-                <button class="login-signup__social-button">Google</button>
-                <button class="login-signup__social-button">Apple</button>
+            <div class="login-signup bg-white card-shadow-xl rounded-xl px-24 py-28 flex flex-col gap-8">
+              <h4 class="login-signup__prompt text-xl font-bold font-trade-gothic">Login or Sign up to book</h4>
+              <input class="border-gray input-easy text-md px-18 py-18" type="text" placeholder="Phone Number" value=""/><span class="text-sm">We'll call or text you to confirm your number. Standard message and data rates apply.<a class="font-semibold" href="#"> Privacy Policy</a></span>
+              <button class="login-signup__button btn btn__success btn__large">Continue</button>
+              <p class="login-signup__separator w-full relative my-10"></p>
+              <div class="login-signup__social grid gap-5">
+                <button class="login-signup__social-button btn btn__plain btn__large"><img src="./images/icons/facebook.svg" alt="Facebook"></button>
+                <button class="login-signup__social-button btn btn__plain btn__large"><img src="./images/icons/google.svg" alt="Google"></button>
+                <button class="login-signup__social-button btn btn__plain btn__large"><img src="./images/icons/apple.svg" alt="Apple"></button>
               </div>
-              <button class="login-signup__email">Continue with email</button>
+              <button class="login-signup__email btn btn__plain btn__large"><img src="./images/icons/mail.svg" alt="">Continue with email</button>
             </div>
           </section>
           <div class="price-info-card bg-white card-shadow-xl rounded-xl px-24 py-24 flex flex-col gap-3">
-            <div class="price-info-card__header flex items-center gap-10"><img src="./images/booking-detail/thumb.png"/>
+            <div class="price-info-card__header flex items-center flex-wrap gap-10"><img src="./images/booking-detail/thumb.png"/>
               <div class="flex flex-col gap-2">
                 <p class="text-md font-medium">Economy</p>
                 <h4 class="text-xl font-semibold">Emirates A380 Airbus</h4>
-                <div class="flight-detail-head__rating flex items-center flex-wrap gap-2 text-xs mt-15">
+                <div class="flight-detail-head__rating flex items-center gap-2 text-xs mt-15">
                   <button class="btn btn__plain btn__small">4.2</button>
-                  <p class="font-semibold">Very Good</p><span>54 reviews</span>
+                  <p class="font-semibold whitespace-nowrap">Very Good</p><span class="whitespace-nowrap">54 reviews</span>
                 </div>
               </div>
             </div>
@@ -134,7 +132,7 @@
               <h1 class="text-5xl font-bold font-trade-gothic mb-6">Subscribe Newsletter</h1>
               <p class="text-xl font-bold font-trade-gothic">The Travel</p><span class="text-md font-medium">Get inspired! Receive travel discounts, tips and behind the scenes stories.</span>
               <div class="mailbox-bottom flex items-center gap-6 w-full">
-                <input class="input-easy text-md px-18 py-18" type="text" placeholder="Your email address" value=""/>
+                <input class="border-gray input-easy text-md px-18 py-18" type="text" placeholder="Your email address" value=""/>
                 <button class="btn btn__dark btn__xlarge">Subscribe</button>
               </div>
             </div>

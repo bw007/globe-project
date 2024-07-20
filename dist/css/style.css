@@ -511,7 +511,6 @@ body {
 }
 
 .input-easy {
-    border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
     display: inline-block;
@@ -776,6 +775,7 @@ input[type=checkbox]:checked + span {
 
 .footer__mailbox input {
     width: 40% !important;
+    border-color: transparent;
 }
 
 @media only screen and (max-width: 920px) {
@@ -1183,14 +1183,6 @@ input[type=checkbox]:checked + span {
     }
 }
 
-@media only screen and (max-width: 520px) {
-    .flight-info__body {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-}
-
 @media only screen and (max-width: 620px) {
     .flight-info__owner {
         flex-direction: column;
@@ -1237,12 +1229,6 @@ input[type=checkbox]:checked + span {
     border-right: 1px solid #CBD5E0;
 }
 
-@media only screen and (max-width: 768px) {
-    .flight-info__icons .flex {
-        padding: 8px 16px;
-    }
-}
-
 @media only screen and (max-width: 520px) {
     .flight-info__icons .flex {
         border: none !important;
@@ -1259,33 +1245,15 @@ input[type=checkbox]:checked + span {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .flight-info__footer {
-        gap: 24px;
-    }
-
-    .flight-info__footer .icon-xl {
-        width: 24px;
-    }
-}
-
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 475px) {
     .flight-info__footer {
         flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    .flight-info__footer {
         gap: 8px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .flight-info__footer-data {
-        flex-direction: column;
-        gap: 0;
-    }
+.flight-info__footer-data {
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 520px) {
@@ -1296,8 +1264,7 @@ input[type=checkbox]:checked + span {
 }
 
 .price-info-card {
-    max-width: 450px;
-    width: 100%;
+    flex: 1;
 }
 
 .price-info-card hr {
@@ -1342,6 +1309,29 @@ input[type=checkbox]:checked + span {
 
 .payment-methods a {
     text-decoration: underline;
+}
+
+.login-signup__separator {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1882352941);
+}
+
+.login-signup__separator::after {
+    content: "Or";
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 60px;
+    height: 20px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: calc(50% - 30px);
+    top: -8px;
+}
+
+.login-signup__social {
+    grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1645,5 +1635,19 @@ input[type=checkbox]:checked + span {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+    }
+}
+
+.book-details {
+    grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .book-details {
+        grid-template-columns: 1fr;
+    }
+
+    .book-details .price-info-card {
+        order: -1;
     }
 }
