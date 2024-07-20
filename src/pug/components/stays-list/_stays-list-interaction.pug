@@ -1,0 +1,11 @@
+section.interaction.mt-40
+  .interaction__container.container
+    .interaction__panel.interaction-panel.flex.flex-col.gap-12.px-24.py-32
+      form.interaction-panel__form.flex.gap-10.w-full
+        .interaction-panel__form-inner.w-full
+          +input("text", "Istanbul, Turkey", "./images/icons/bed-dark.svg", "Enter Destination")
+          +input("text", "Fri 12/2", "./images/icons/calendar-dark.svg", "Check In")
+          +input("text", "Sun 12/4", "./images/icons/calendar-dark.svg", "Check Out")
+          +select("Rooms & Guests", "Rooms & Guests", "1 room, 2 guests", "1 room, 4 guests")
+        button.btn.btn__success.btn__xlarge.w-fil.mt-9.h-full
+          img(src="./images/icons/search-outline.svg")

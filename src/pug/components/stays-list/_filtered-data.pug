@@ -1,0 +1,25 @@
+- var tabs = []
+- tabs[0] = {label: "Hotels", text: "257 places"}
+- tabs[1] = {label: "Motels", text: "51 places"}
+- tabs[2] = {label: "Resorts", text: "78 places"}
+.stays-filter__data.stays-data.w-full.flex.flex-col.gap-4
+  .stays-data__header.flex.flex-col.gap-8
+    .stays-data__tabs.grid.bg-white.card-shadow-xl.rounded-xl.overflow-hidden
+      each item in tabs
+        .flex.flex-col.gap-4.tab-item
+          h5.text-md.font-semibold= item.label
+          span.text-sm.whitespace-nowrap= item.text
+    .stays-data__sort-info.flex.justify-between.items.center
+      h5.text-sm.font-semibold.flex.items-center.gap-2
+        | Showing 4 of 
+        span.text-red 257 places
+      .flex.items-center.gap-2.text-sm.pointer
+        span Sort by
+        h5.font-semibold Recommended
+        img(src="./images/icons/chevron-down.svg")
+  .flex.flex-col.gap-12.mb-5
+    +stay-order("./images/stays/hotel-1.png", "4.2", "Very Good", "$104", "CVK Park Bosphorus Hotel Istanbul")
+    +stay-order("./images/stays/hotel-2.png", "4.7", "Very Good", "$200", "Eresin Hotels Sultanahmet - Boutique Class")
+    +stay-order("./images/stays/hotel-3.png", "4.3", "Very Good", "$104", "Eresin Hotels Sultanahmet - Boutique Class")
+    +stay-order("./images/stays/hotel-4.png", "4.9", "Very Good", "$114", "Eresin Hotels Sultanahmet - Boutique Class")
+  button.btn.btn__dark.btn__large.w-full Show more results

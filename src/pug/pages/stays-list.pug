@@ -1,0 +1,10 @@
+extends ../layouts/main.pug
+
+block main-content
+  main.main
+    include ../components/stays-list/_stays-list-interaction.pug
+    section.stays-filter.my-30
+      .stays-filter__container.container.flex.justify-between.items-start.gap-9
+        include ../components/stays-list/_filter-operation.pug
+        include ../components/stays-list/_filtered-data.pug
+    section.space-y-20

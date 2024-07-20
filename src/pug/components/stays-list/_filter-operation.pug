@@ -1,0 +1,8 @@
+- var freebies = ["Free breakfast", "Free parking", "Free internet", "Free airport shuttle"]
+- var Amenities = ["24hr front desk", "Air-conditioned", "Fitness", "Pool"]
+.stays-filter__operation.flex.flex-col.gap-10.pr-25
+  h4.text-xl.font-semibold Filter
+  +filter-range("Price", "$50", "$1200")
+  +filter-checkbox("Freebies", ...freebies)
+  +filter-checkbox("Amenities", ...Amenities)
+  p.text-sm.font-bold.text-red +24 more

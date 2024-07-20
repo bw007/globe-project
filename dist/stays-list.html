@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe</title>
+    <link rel="stylesheet" href="./css/lib.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body class="wrapper">
+    <aside class="sidebar fixed z-10 w-full pt-35 pb-50">
+      <div class="sidebar__container container flex flex-col items-center gap-6">
+        <div class="sidebar__close flex justify-center items-center pointer"><img class="icon-lg" src="./images/icons/close-outline.svg"></div>
+        <div class="sidebar__links flex items-center flex-col gap-2 h-full"><a class="sidebar__link h-full flex items-center gap-2 py-10 text-sm font-semibold" id="menu-link" href="index.html" data-page="flight"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="sidebar__link h-full flex items-center gap-2 py-10 text-sm font-semibold" id="menu-link" href="stays.html" data-page="stays"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div>
+        <div class="sidebar__auth flex items-center gap-2"><a class="sidebar__btn btn btn__text" href="#">Login</a><a class="sidebar__btn btn btn__dark btn__small" href="#">Sign up</a></div>
+      </div>
+    </aside>
+    <div class="sidebar-overlay fixed hidden"></div>
+    <header class="header">
+      <nav class="header-nav flex items-center w-full card-shadow bg-white">
+        <div class="header-nav__container container flex justify-between items-center w-full h-full">
+          <div class="header-nav__links flex items-center gap-12 h-full"><a class="header-nav__link h-full flex items-center gap-2 text-sm font-semibold" id="menu-link" href="index.html" data-page="flight"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 text-sm font-semibold" id="menu-link" href="stays.html" data-page="stays"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div><a class="header-nav__logo flex items-center" href="index.html"><img src="./images/header/logo.svg" alt="Company logo" draggable="false" width="110" height="35"></a>
+          <div class="header-nav__auth header-auth flex items-center gap-4"><a class="header-nav__btn btn btn__text" href="#">Login</a><a class="header-nav__btn btn btn__dark" href="#">Sign up</a></div>
+          <div class="header-nav__bar3 pointer justify-center items-center"><img src="./images/icons/menu-dark.svg"></div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="interaction mt-40">
+        <div class="interaction__container container">
+          <div class="interaction__panel interaction-panel flex flex-col gap-12 px-24 py-32">
+            <form class="interaction-panel__form flex gap-10 w-full">
+              <div class="interaction-panel__form-inner w-full">
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">Enter Destination</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Istanbul, Turkey" value=""/><img class="icon-sms" src="./images/icons/bed-dark.svg" alt="" draggable="false"/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">Check In</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Fri 12/2" value=""/><img class="icon-sms" src="./images/icons/calendar-dark.svg" alt="" draggable="false"/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">Check Out</legend>
+                  <div class="input-wrap flex items-center justify-between px-15 pt-10 pb-15">
+                    <input class="text-md font-regular pr-15" type="text" placeholder="Sun 12/4" value=""/><img class="icon-sms" src="./images/icons/calendar-dark.svg" alt="" draggable="false"/>
+                  </div>
+                </fieldset>
+                <fieldset class="input-fieldset">
+                  <legend class="text-sm font-regular ml-10 px-5">Rooms &amp; Guests</legend>
+                  <div class="select-wrap flex items-center justify-between">
+                    <select class="text-md font-regular pr-15 px-15 pt-10 pb-15" value="Rooms &amp; Guests">
+                      <option value="1 room, 2 guests">1 room, 2 guests</option>
+                      <option value="1 room, 4 guests">1 room, 4 guests</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </div>
+              <button class="btn btn__success btn__xlarge w-fil mt-9 h-full"><img src="./images/icons/search-outline.svg"></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="stays-filter my-30">
+        <div class="stays-filter__container container flex justify-between items-start gap-9">
+          <div class="stays-filter__operation flex flex-col gap-10 pr-25">
+            <h4 class="text-xl font-semibold">Filter</h4>
+            <div class="filter filter__range flex flex-col gap-7 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Price</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__line filter-point w-full bg-dark mt-6 relative"><span class="filter-point__left absolute"></span><span class="filter-point__right absolute"></span></div>
+              <div class="filter__count filter-count text-xs font-medium w-full flex justify-between"><span class="filter-count__left">$50</span><span class="filter-count__right">$1200</span></div>
+            </div>
+            <div class="filter filter__checkbox flex flex-col gap-6 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Freebies</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__check-list flex flex-col gap-5">
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Free breakfast</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Free parking</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Free internet</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Free airport shuttle</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter filter__checkbox flex flex-col gap-6 w-full pb-25">
+              <div class="filter__caption flex justify-between items-center">
+                <h5 class="text-md font-semibold">Amenities</h5><img src="./images/icons/chevron-up.svg"/>
+              </div>
+              <div class="filter__check-list flex flex-col gap-5">
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>24hr front desk</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Air-conditioned</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Fitness</span>
+                </label>
+                <label class="text-sm font-medium flex item-center gap-3">
+                  <input type="checkbox"/><span>Pool</span>
+                </label>
+              </div>
+            </div>
+            <p class="text-sm font-bold text-red">+24 more</p>
+          </div>
+          <div class="stays-filter__data stays-data w-full flex flex-col gap-4">
+            <div class="stays-data__header flex flex-col gap-8">
+              <div class="stays-data__tabs grid bg-white card-shadow-xl rounded-xl overflow-hidden">
+                <div class="flex flex-col gap-4 tab-item">
+                  <h5 class="text-md font-semibold">Hotels</h5><span class="text-sm whitespace-nowrap">257 places</span>
+                </div>
+                <div class="flex flex-col gap-4 tab-item">
+                  <h5 class="text-md font-semibold">Motels</h5><span class="text-sm whitespace-nowrap">51 places</span>
+                </div>
+                <div class="flex flex-col gap-4 tab-item">
+                  <h5 class="text-md font-semibold">Resorts</h5><span class="text-sm whitespace-nowrap">78 places</span>
+                </div>
+              </div>
+              <div class="stays-data__sort-info flex justify-between items center">
+                <h5 class="text-sm font-semibold flex items-center gap-2">Showing 4 of <span class="text-red">257 places</span></h5>
+                <div class="flex items-center gap-2 text-sm pointer"><span>Sort by</span>
+                  <h5 class="font-semibold">Recommended</h5><img src="./images/icons/chevron-down.svg">
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-12 mb-5">
+              <div class="stays-card flex items-start justify-between gap-12 bg-white rounded-xl card-shadow-xl py-24 pl-24 pr-28"><img class="stays-card__img" src="./images/stays/hotel-1.png"/>
+                <div class="stays-card__inner flex flex-col gap-8 w-full">
+                  <div class="stays-card__header flex flex justify-between items-start gap-8 whitespace-nowrap">
+                    <h2 class="text-xl font-bold font-trade-gothic">CVK Park Bosphorus Hotel Istanbul</h2>
+                    <div class="flex flex-col items-end gap-1"><span class="text-xs font-medium">starting from</span>
+                      <h4 class="text-2xl font-bold text-red">$104</h4>
+                    </div>
+                  </div>
+                  <div class="stays-card__body flex flex-col gap-7 pb-18">
+                    <div class="flex items-start flex-col gap-6">
+                      <div class="flex items-center gap-1"><img class="icon-sm" src="./images/icons/location-dark.svg"/><span class="text-sm font-medium">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</span></div>
+                      <div class="flex items-center gap-2">
+                        <div class="flex"><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/></div>
+                        <p class="text-xs font-medium">5 Star Hotel</p>
+                        <p class="text-xs font-medium">20+ Aminities</p>
+                      </div>
+                      <button class="btn btn__small btn__plain">4.2</button>
+                      <div class="flex gap-2 items-center text-xs"><span class="font-semibold">Very Good</span><span>54 reviews</span></div>
+                    </div>
+                  </div>
+                  <div class="stays-card__footer flex justify-between gap-6">
+                    <button class="btn btn__large btn__plain"><img src="./images/icons/heart-outline.svg"/></button><a class="btn btn__large btn__success" href="flight-detail.html">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="stays-card flex items-start justify-between gap-12 bg-white rounded-xl card-shadow-xl py-24 pl-24 pr-28"><img class="stays-card__img" src="./images/stays/hotel-2.png"/>
+                <div class="stays-card__inner flex flex-col gap-8 w-full">
+                  <div class="stays-card__header flex flex justify-between items-start gap-8 whitespace-nowrap">
+                    <h2 class="text-xl font-bold font-trade-gothic">Eresin Hotels Sultanahmet - Boutique Class</h2>
+                    <div class="flex flex-col items-end gap-1"><span class="text-xs font-medium">starting from</span>
+                      <h4 class="text-2xl font-bold text-red">$200</h4>
+                    </div>
+                  </div>
+                  <div class="stays-card__body flex flex-col gap-7 pb-18">
+                    <div class="flex items-start flex-col gap-6">
+                      <div class="flex items-center gap-1"><img class="icon-sm" src="./images/icons/location-dark.svg"/><span class="text-sm font-medium">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</span></div>
+                      <div class="flex items-center gap-2">
+                        <div class="flex"><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/></div>
+                        <p class="text-xs font-medium">5 Star Hotel</p>
+                        <p class="text-xs font-medium">20+ Aminities</p>
+                      </div>
+                      <button class="btn btn__small btn__plain">4.7</button>
+                      <div class="flex gap-2 items-center text-xs"><span class="font-semibold">Very Good</span><span>54 reviews</span></div>
+                    </div>
+                  </div>
+                  <div class="stays-card__footer flex justify-between gap-6">
+                    <button class="btn btn__large btn__plain"><img src="./images/icons/heart-outline.svg"/></button><a class="btn btn__large btn__success" href="flight-detail.html">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="stays-card flex items-start justify-between gap-12 bg-white rounded-xl card-shadow-xl py-24 pl-24 pr-28"><img class="stays-card__img" src="./images/stays/hotel-3.png"/>
+                <div class="stays-card__inner flex flex-col gap-8 w-full">
+                  <div class="stays-card__header flex flex justify-between items-start gap-8 whitespace-nowrap">
+                    <h2 class="text-xl font-bold font-trade-gothic">Eresin Hotels Sultanahmet - Boutique Class</h2>
+                    <div class="flex flex-col items-end gap-1"><span class="text-xs font-medium">starting from</span>
+                      <h4 class="text-2xl font-bold text-red">$104</h4>
+                    </div>
+                  </div>
+                  <div class="stays-card__body flex flex-col gap-7 pb-18">
+                    <div class="flex items-start flex-col gap-6">
+                      <div class="flex items-center gap-1"><img class="icon-sm" src="./images/icons/location-dark.svg"/><span class="text-sm font-medium">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</span></div>
+                      <div class="flex items-center gap-2">
+                        <div class="flex"><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/></div>
+                        <p class="text-xs font-medium">5 Star Hotel</p>
+                        <p class="text-xs font-medium">20+ Aminities</p>
+                      </div>
+                      <button class="btn btn__small btn__plain">4.3</button>
+                      <div class="flex gap-2 items-center text-xs"><span class="font-semibold">Very Good</span><span>54 reviews</span></div>
+                    </div>
+                  </div>
+                  <div class="stays-card__footer flex justify-between gap-6">
+                    <button class="btn btn__large btn__plain"><img src="./images/icons/heart-outline.svg"/></button><a class="btn btn__large btn__success" href="flight-detail.html">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="stays-card flex items-start justify-between gap-12 bg-white rounded-xl card-shadow-xl py-24 pl-24 pr-28"><img class="stays-card__img" src="./images/stays/hotel-4.png"/>
+                <div class="stays-card__inner flex flex-col gap-8 w-full">
+                  <div class="stays-card__header flex flex justify-between items-start gap-8 whitespace-nowrap">
+                    <h2 class="text-xl font-bold font-trade-gothic">Eresin Hotels Sultanahmet - Boutique Class</h2>
+                    <div class="flex flex-col items-end gap-1"><span class="text-xs font-medium">starting from</span>
+                      <h4 class="text-2xl font-bold text-red">$114</h4>
+                    </div>
+                  </div>
+                  <div class="stays-card__body flex flex-col gap-7 pb-18">
+                    <div class="flex items-start flex-col gap-6">
+                      <div class="flex items-center gap-1"><img class="icon-sm" src="./images/icons/location-dark.svg"/><span class="text-sm font-medium">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</span></div>
+                      <div class="flex items-center gap-2">
+                        <div class="flex"><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/><img src="./images/stays/star.svg"/></div>
+                        <p class="text-xs font-medium">5 Star Hotel</p>
+                        <p class="text-xs font-medium">20+ Aminities</p>
+                      </div>
+                      <button class="btn btn__small btn__plain">4.9</button>
+                      <div class="flex gap-2 items-center text-xs"><span class="font-semibold">Very Good</span><span>54 reviews</span></div>
+                    </div>
+                  </div>
+                  <div class="stays-card__footer flex justify-between gap-6">
+                    <button class="btn btn__large btn__plain"><img src="./images/icons/heart-outline.svg"/></button><a class="btn btn__large btn__success" href="flight-detail.html">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn__dark btn__large w-full">Show more results</button>
+          </div>
+        </div>
+      </section>
+      <section class="space-y-20"></section>
+    </main>
+    <footer class="footer bg-success py-64">
+      <div class="footer__container container h-full">
+        <div class="w-full relative py-80">
+          <div class="footer__mailbox bg-teal rounded-20 px-24 py-20 w-full absolute">
+            <div class="flex flex-col gap-6">
+              <h1 class="text-5xl font-bold font-trade-gothic mb-6">Subscribe Newsletter</h1>
+              <p class="text-xl font-bold font-trade-gothic">The Travel</p><span class="text-md font-medium">Get inspired! Receive travel discounts, tips and behind the scenes stories.</span>
+              <div class="mailbox-bottom flex items-center gap-6 w-full">
+                <input class="border-gray input-easy text-md px-18 py-18" type="text" placeholder="Your email address" value=""/>
+                <button class="btn btn__dark btn__xlarge">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__inner flex items-start justify-between gap-32">
+          <div class="footer__socially flex flex-col gap-8"><a href="index.html"><img src="./images/footer/logo-2.svg" width="120" height="39"></a>
+            <div class="flex items-center justify-between"><a class="footer__link" href="#"><img src="./images/footer/facebook.svg"></a><a class="footer__link" href="#"><img src="./images/footer/twitter.svg"></a><a class="footer__link" href="#"><img src="./images/footer/youtube.svg"></a><a class="footer__link" href="#"><img src="./images/footer/instagram.svg"></a></div>
+          </div>
+          <div class="footer__links grid grid-cols-5 gap-4">
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Our Destinations</h4><a class="footer__link text-sm font-medium" href="#">Chiroqchi</a><a class="footer__link text-sm font-medium" href="#">Tarag'ay</a><a class="footer__link text-sm font-medium" href="#">Quruqsoy</a><a class="footer__link text-sm font-medium" href="#">Xorazm</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Our Activities</h4><a class="footer__link text-sm font-medium" href="#">Northern Lights</a><a class="footer__link text-sm font-medium" href="#">Cruising &amp; sailing</a><a class="footer__link text-sm font-medium" href="#">Multi-activities</a><a class="footer__link text-sm font-medium" href="#">Kayaing</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Travel Blogs</h4><a class="footer__link text-sm font-medium" href="#">Bali Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Sri Lanks Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Peru Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Bali Travel Guide</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">About Us</h4><a class="footer__link text-sm font-medium" href="#">Our Story</a><a class="footer__link text-sm font-medium" href="#">Work with us</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Contact Us</h4><a class="footer__link text-sm font-medium" href="#">Our Story</a><a class="footer__link text-sm font-medium" href="#">Work with us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.min.js" type="module"></script>
+  </body>
+</html>
