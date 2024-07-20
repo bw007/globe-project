@@ -1,0 +1,33 @@
+.payment-methods {
+  .circle {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $color-gray-900;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      border-radius: 15px;
+    }
+  }
+  input[type="radio"] {
+    display: none;
+    &:checked {
+      &+label {
+        background-color: $color-green-400;
+        .circle {
+          border-color: $color-white;
+          &::after {
+            background-color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+}
