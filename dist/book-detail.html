@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe</title>
+    <link rel="stylesheet" href="./css/lib.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body class="wrapper">
+    <aside class="sidebar fixed z-10 w-full pt-35 pb-50">
+      <div class="sidebar__container container flex flex-col items-center gap-6">
+        <div class="sidebar__close flex justify-center items-center pointer"><img class="icon-lg" src="./images/icons/close-outline.svg"></div>
+        <div class="sidebar__links flex items-center flex-col gap-2 h-full"><a class="header-nav__link header-nav__link--active h-full flex items-center gap-2 py-10 text-sm font-semibold" href="index.html"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 py-10 text-sm font-semibold" href="stays.html"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div>
+        <div class="sidebar__auth header-auth flex items-center gap-2"><a class="header-nav__btn btn btn__text" href="#">Login</a><a class="header-nav__btn btn btn__dark btn__small" href="#">Sign up</a></div>
+      </div>
+    </aside>
+    <div class="sidebar-overlay fixed hidden"></div>
+    <header class="header">
+      <nav class="header-nav flex items-center w-full card-shadow bg-white">
+        <div class="header-nav__container container flex justify-between items-center w-full h-full">
+          <div class="header-nav__links flex items-center gap-12 h-full"><a class="header-nav__link header-nav__link--active h-full flex items-center gap-2 text-sm font-semibold" href="index.html"><img src="./images/icons/airplane-dark.svg" alt="" draggable="false">Find Flight</a><a class="header-nav__link h-full flex items-center gap-2 text-sm font-semibold" href="stays.html"><img src="./images/icons/bed-dark.svg" alt="" draggable="false">Find Stays</a></div><a class="header-nav__logo flex items-center" href="index.html"><img src="./images/header/logo.svg" alt="Company logo" draggable="false" width="110" height="35"></a>
+          <div class="header-nav__auth header-auth flex items-center gap-4"><a class="header-nav__btn btn btn__text" href="#">Login</a><a class="header-nav__btn btn btn__dark" href="#">Sign up</a></div>
+          <div class="header-nav__bar3 pointer justify-center items-center"><img src="./images/icons/menu-dark.svg"></div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="mt-45 mb-30">
+        <div class="container w-full">
+          <div class="breadcrumbs flex items-center text-sm font-medium gap-2"><a class="breadcrumbs__item text-red flex items-center gap-2" href="#">Turkey<img class="icon-sm" src="./images/icons/chevron-right.svg"/></a><a class="breadcrumbs__item text-red flex items-center gap-2" href="#">Istanbul<img class="icon-sm" src="./images/icons/chevron-right.svg"/></a><a class="breadcrumbs__item text-red flex items-center gap-2" href="#">CVK Park Bosphorus Hotel Istanbul<img class="icon-sm" src="./images/icons/chevron-right.svg"/></a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="book-details flex items-start gap-12">
+          <section class="book-details__info flex flex-col gap-12 mb-40">
+            <div class="book-details__info-header">
+              <div class="flight-info flex flex-col items-center gap-12 bg-white card-shadow-xl px-24 py-24 rounded-xl">
+                <div class="flight-info__header flex justify-between gap-3 w-full">
+                  <h4 class="text-xl font-trade-gothic font-bold">Return Wed, Dec 8</h4>
+                  <p class="text-xl font-medium">2h 28m</p>
+                </div>
+                <div class="flight-info__body flex items-center justify-between w-full">
+                  <div class="flight-info__owner flex items-center justify-between gap-8 px-24 py-14 border-green rounded-lg"><img src="./images/flight-detail/em-1.png"/>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-2xl font-semibold">Emirates</h4><span class="text-sm font-medium">Airbus A320</span>
+                    </div>
+                  </div>
+                  <div class="flight-info__icons flex items-center">
+                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/airplane-dark.svg"/></div>
+                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/wifi-dark.svg"/></div>
+                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/spedometer.svg"/></div>
+                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/food.svg"/></div>
+                    <div class="flex items-center justify center px-24 py-12"><img src="./images/icons/recline.svg"/></div>
+                  </div>
+                </div>
+                <div class="flight-info__footer flex items-center gap-28">
+                  <div class="flight-info__footer-data flex items-center gap-4">
+                    <h4 class="text-2xl font-semibold">12:00 pm</h4><span class="text-md font-medium mt-4">Newark(EWR)</span>
+                  </div>
+                  <div class="flex items-center gap-6"><img src="./images/icons/line-to-left.svg"/><img class="icon-xl" src="./images/icons/airplane-dark.svg"/><img src="./images/icons/line-to-right.svg"/></div>
+                  <div class="flight-info__footer-data flex items-center gap-4">
+                    <h4 class="text-2xl font-semibold">14:00 pm</h4><span class="text-md font-medium mt-4">Newark(EWR)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-methods bg-white card-shadow-xl rounded-xl px-24 py-24 flex flex-col gap-8">
+              <input type="radio" name="pay" id="full" checked="checked"/>
+              <label class="payment-methods__option flex items-center justify-between gap-12 py-20 px-20 rounded-xl" for="full">
+                <div class="flex flex-col gap-4">
+                  <p class="text-md font-bold font-trade-gothic">Pay in full</p>
+                  <p class="text-sm">Pay the total and you are all set</p>
+                </div>
+                <div class="flex justify-center items-center circle rounded-full"></div>
+              </label>
+              <input type="radio" name="pay" id="part"/>
+              <label class="payment-methods__option flex items-center justify-between gap-12 py-20 px-20 rounded-xl" for="part">
+                <div class="flex flex-col gap-4">
+                  <p class="text-md font-bold font-trade-gothic">Pay part now, part later</p>
+                  <p class="text-sm">Pay $207.43 now, and the rest ($207.43) will be automatically charged to the same payment method on Nov 14, 2022. No extra fees.</p>
+                </div>
+                <div class="flex justify-center items-center circle rounded-full"></div>
+              </label><a class="text-xs font-medium px-20" href="#">More info</a>
+            </div>
+            <!-- Login-->
+            <div class="login-signup bg-white card-shadow-xl rounded-xl px-24 py-24 flex flex-col gap-8">
+              <p class="login-signup__prompt">Login or Sign up to book</p>
+              <input class="login-signup__input" type="text" placeholder="Phone Number">
+              <button class="login-signup__button">Continue</button>
+              <p class="login-signup__or">Or</p>
+              <div class="login-signup__social">
+                <button class="login-signup__social-button">Facebook</button>
+                <button class="login-signup__social-button">Google</button>
+                <button class="login-signup__social-button">Apple</button>
+              </div>
+              <button class="login-signup__email">Continue with email</button>
+            </div>
+          </section>
+          <div class="price-info-card bg-white card-shadow-xl rounded-xl px-24 py-24 flex flex-col gap-3">
+            <div class="price-info-card__header flex items-center gap-10"><img src="./images/booking-detail/thumb.png"/>
+              <div class="flex flex-col gap-2">
+                <p class="text-md font-medium">Economy</p>
+                <h4 class="text-xl font-semibold">Emirates A380 Airbus</h4>
+                <div class="flight-detail-head__rating flex items-center flex-wrap gap-2 text-xs mt-15">
+                  <button class="btn btn__plain btn__small">4.2</button>
+                  <p class="font-semibold">Very Good</p><span>54 reviews</span>
+                </div>
+              </div>
+            </div>
+            <hr/>
+            <p class="font-medium text-md">Your booking is protected by<b class="ml-2">globe</b></p>
+            <hr/>
+            <div class="price-info-card__details flex flex-col gap-6">
+              <h3 class="text-md font-bold font-trade-gothic">Price Details</h3>
+              <p class="flex justify-between w-full text-md font-medium">Base Fare<b class="font-semibold">$400</b></p>
+              <p class="flex justify-between w-full text-md font-medium">Discount<b class="font-semibold">$-50</b></p>
+              <p class="flex justify-between w-full text-md font-medium">Taxes<b class="font-semibold">$50</b></p>
+              <p class="flex justify-between w-full text-md font-medium">Service Fee<b class="font-semibold">$0</b></p>
+              <hr/>
+              <p class="flex justify-between w-full text-md font-medium">Total<b class="font-semibold">$400</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="space-y-20"></section>
+    </main>
+    <footer class="footer bg-success py-64">
+      <div class="footer__container container h-full">
+        <div class="w-full relative py-80">
+          <div class="footer__mailbox bg-teal rounded-20 px-24 py-20 w-full absolute">
+            <div class="flex flex-col gap-6">
+              <h1 class="text-5xl font-bold font-trade-gothic mb-6">Subscribe Newsletter</h1>
+              <p class="text-xl font-bold font-trade-gothic">The Travel</p><span class="text-md font-medium">Get inspired! Receive travel discounts, tips and behind the scenes stories.</span>
+              <div class="mailbox-bottom flex items-center gap-6 w-full">
+                <input class="input-easy text-md px-18 py-18" type="text" placeholder="Your email address" value=""/>
+                <button class="btn btn__dark btn__xlarge">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__inner flex items-start justify-between gap-32">
+          <div class="footer__socially flex flex-col gap-8"><a href="index.html"><img src="./images/footer/logo-2.svg" width="120" height="39"></a>
+            <div class="flex items-center justify-between"><a class="footer__link" href="#"><img src="./images/footer/facebook.svg"></a><a class="footer__link" href="#"><img src="./images/footer/twitter.svg"></a><a class="footer__link" href="#"><img src="./images/footer/youtube.svg"></a><a class="footer__link" href="#"><img src="./images/footer/instagram.svg"></a></div>
+          </div>
+          <div class="footer__links grid grid-cols-5 gap-4">
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Our Destinations</h4><a class="footer__link text-sm font-medium" href="#">Chiroqchi</a><a class="footer__link text-sm font-medium" href="#">Tarag'ay</a><a class="footer__link text-sm font-medium" href="#">Quruqsoy</a><a class="footer__link text-sm font-medium" href="#">Xorazm</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Our Activities</h4><a class="footer__link text-sm font-medium" href="#">Northern Lights</a><a class="footer__link text-sm font-medium" href="#">Cruising &amp; sailing</a><a class="footer__link text-sm font-medium" href="#">Multi-activities</a><a class="footer__link text-sm font-medium" href="#">Kayaing</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Travel Blogs</h4><a class="footer__link text-sm font-medium" href="#">Bali Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Sri Lanks Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Peru Travel Guide</a><a class="footer__link text-sm font-medium" href="#">Bali Travel Guide</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">About Us</h4><a class="footer__link text-sm font-medium" href="#">Our Story</a><a class="footer__link text-sm font-medium" href="#">Work with us</a>
+            </div>
+            <div class="footer__block flex flex-col gap-4">
+              <h4 class="text-md font-bold font-trade-gothic mb-6">Contact Us</h4><a class="footer__link text-sm font-medium" href="#">Our Story</a><a class="footer__link text-sm font-medium" href="#">Work with us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.min.js" type="module"></script>
+  </body>
+</html>

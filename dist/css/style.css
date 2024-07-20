@@ -1295,6 +1295,55 @@ input[type=checkbox]:checked + span {
     }
 }
 
+.price-info-card {
+    max-width: 450px;
+    width: 100%;
+}
+
+.price-info-card hr {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1254901961);
+    box-shadow: none;
+    border: none;
+}
+
+.payment-methods .circle {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #112211;
+}
+
+.payment-methods .circle::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.payment-methods input[type=radio] {
+    display: none;
+}
+
+.payment-methods input[type=radio]:checked + label {
+    background-color: #8DD3BB;
+}
+
+.payment-methods input[type=radio]:checked + label .circle {
+    border-color: #FFFFFF;
+}
+
+.payment-methods input[type=radio]:checked + label .circle::after {
+    background-color: #FFFFFF;
+}
+
+.payment-methods a {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1024px) {
     .main__space-1 {
         height: 350px;
