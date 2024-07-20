@@ -1,0 +1,29 @@
+extends ../layouts/auth.pug
+
+block content
+  .auth__inner.flex.flex-col.gap-16
+    img.auth__logo(src="./images/header/logo.svg", alt="Company logo", draggable="false", width="110", height="35")
+    form.auth__form.flex.flex-col.gap-8
+      h1.text-5xl.font-bold.font-trade-gothic Login
+      p.text-md Login to access your Golobe account
+      .flex.flex-col.gap-8.mt-10
+        +input("email", "Email...", "", "Email", "john.doe@gmail.com")
+        +input("password", "Password...", "./images/icons/eye-off.svg", "Password", "12345678")
+        .flex.justify-between.mt-6
+          .flex.items-center.gap-4
+            input(type="checkbox", id="rem")
+            label.text-sm.font-medium(for="rem") Remember me
+          a.text-sm.font-medium.text-red Forgot Password
+        button.btn.btn__success.btn__large Login
+      p.text-sm.font-medium.flex.items-center.justify-center.gap-2.text-center
+        | Don’t have an account?
+        span.text-red.font-semibold Sign up
+    .auth__separator.relative.flex.justify-center
+    .auth__social.grid.grid-cols-3.gap-5
+      button.login-signup__social-button.btn.btn__plain.btn__large
+        img(src="./images/icons/facebook.svg", alt="Facebook")
+      button.login-signup__social-button.btn.btn__plain.btn__large
+        img(src="./images/icons/google.svg", alt="Google")
+      button.login-signup__social-button.btn.btn__plain.btn__large
+        img(src="./images/icons/apple.svg", alt="Apple")
+  img.auth__decor(src="./images/auth/login-1.jpg", alt="")
