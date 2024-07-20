@@ -1,0 +1,21 @@
+header.header
+  include ../_navbar.pug
+  .header__hero.header__hero--stays.header-hero
+    .header-hero__container.container.h-full.relative
+      h1.header-hero__title.font-bold.mb-8 Make your travel whishlist, we’ll do the rest
+      p.header-hero__caption.font-regular.text-xl Special offers to suit your plan
+      .header-hero__interaction-panel.interaction-panel.absolute.flex.flex-col.gap-12.px-24.py-32
+        h3.interaction-panel__title.text-xl.font-semibold Where are you flying?
+        form.interaction-panel__form.flex.flex-col.gap-12
+          .interaction-panel__form-inner.flex.justify-between.items-center
+            +input("text", "Istanbul, Turkey", "./images/icons/bed-dark.svg", "Enter Destination")
+            +input("text", "Fri 12/2", "./images/icons/calendar-dark.svg", "Check In")
+            +input("text", "Sun 12/4", "./images/icons/calendar-dark.svg", "Check Out")
+            +select("Rooms & Guests", "Rooms & Guests", "1 room, 2 guests", "1 room, 4 guests")
+          .interaction-panel__form-submit.flex.items-center.justify-end.gap-4.w-full
+            button.btn.btn__text
+              img(src="./images/icons/plus.svg")
+              | Add Promo Code
+            button.btn.btn__success
+              img.icon-sm(src="./images/icons/building-dark.svg")
+              | Show places
