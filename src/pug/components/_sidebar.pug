@@ -3,12 +3,12 @@ aside.sidebar.fixed.z-10.w-full.pt-35.pb-50
     .sidebar__close.flex.justify-center.items-center.pointer
       img.icon-lg(src="./images/icons/close-outline.svg")
     .sidebar__links.flex.items-center.flex-col.gap-2.h-full
-      a.header-nav__link.header-nav__link--active.h-full.flex.items-center.gap-2.py-10.text-sm.font-semibold(href="index.html")
+      a#menu-link.sidebar__link.h-full.flex.items-center.gap-2.py-10.text-sm.font-semibold(href="index.html", data-page="flight")
         img(src="./images/icons/airplane-dark.svg", alt="", draggable="false")
         | Find Flight
-      a.header-nav__link.h-full.flex.items-center.gap-2.py-10.text-sm.font-semibold(href="stays.html")
+      a#menu-link.sidebar__link.h-full.flex.items-center.gap-2.py-10.text-sm.font-semibold(href="stays.html", data-page="stays")
         img(src="./images/icons/bed-dark.svg", alt="", draggable="false")
         | Find Stays
-    .sidebar__auth.header-auth.flex.items-center.gap-2
-      a.header-nav__btn.btn.btn__text(href="#") Login
-      a.header-nav__btn.btn.btn__dark.btn__small(href="#") Sign up
+    .sidebar__auth.flex.items-center.gap-2
+      a.sidebar__btn.btn.btn__text(href="#") Login
+      a.sidebar__btn.btn.btn__dark.btn__small(href="#") Sign up
