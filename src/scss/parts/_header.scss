@@ -36,9 +36,8 @@
     height: 75px;
   }
   &__link {
-    &--active {
+    &.menu__link--active {
       position: relative;
-
       &::after {
         display: inline-block;
         content: "";
