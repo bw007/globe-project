@@ -5,11 +5,11 @@
     }
   }
   &__body {
-    @include breakpoint-max(520px) {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
-    }
+    // @include breakpoint-max(520px) {
+    //   flex-direction: column;
+    //   align-items: flex-start;
+    //   gap: 20px;
+    // }
   }
   &__owner {
     @include breakpoint-max(620px) {
@@ -48,7 +48,7 @@
         border-right: 1px solid $color-gray-300;
       }
       @include breakpoint-max(768px) {
-        padding: 8px 16px;
+        // padding: 8px 16px;
       }
       @include breakpoint-max(520px) {
         border: none !important;
@@ -62,24 +62,28 @@
     }
   }
   &__footer {
-    @include breakpoint-max(1024px) {
-      gap: 24px;
-      .icon-xl {
-        width: 24px;
-      }
-    }
-    @include breakpoint-max(520px) {
+
+    // @include breakpoint-max(1024px) {
+    //   gap: 24px;
+    //   .icon-xl {
+    //     width: 24px;
+    //   }
+    // }
+    // @include breakpoint-max(520px) {
+    //   flex-direction: column;
+    // }
+    @include breakpoint-max(475px) {
       flex-direction: column;
-    }
-    @include breakpoint-max(520px) {
       gap: 8px;
     }
   }
   &__footer-data {
-    @include breakpoint-max(768px) {
-      flex-direction: column;
-      gap: 0;
-    }
+    flex-wrap: wrap;
+    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // @include breakpoint-max(768px) {
+    //   flex-direction: column;
+    //   gap: 0;
+    // }
     @include breakpoint-max(520px) {
       flex-direction: row;
       gap: 12px;

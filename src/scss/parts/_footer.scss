@@ -25,6 +25,7 @@
 
     input {
       width: 40% !important;
+      border-color: transparent;
     }
 
     @include breakpoint-max (920px) {
