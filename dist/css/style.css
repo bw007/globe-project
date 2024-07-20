@@ -1863,3 +1863,72 @@ input[type=checkbox]:checked + span {
     flex: 1;
     font-weight: 600 !important;
 }
+
+@media only screen and (max-width: 1024px) {
+    .auth__container {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .auth__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.auth__inner {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .auth__inner {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .auth__inner {
+        max-width: 520px;
+        margin: auto;
+    }
+}
+
+.auth__decor {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media only screen and (max-width: 910px) {
+    .auth__decor {
+        display: none;
+    }
+}
+
+.auth__form input {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+    .auth__form {
+        gap: 10px;
+    }
+}
+
+.auth__separator {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1882352941);
+}
+
+.auth__separator::after {
+    content: "Or login with";
+    font-size: 1.4rem;
+    width: auto;
+    height: 20px;
+    padding: 0 20px;
+    background-color: #fafafa;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: -8px;
+}
