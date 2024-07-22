@@ -1,6 +1,9 @@
 mixin input-fieldset(type="text", placeholder="", src="", label="", val="")
   fieldset.input-fieldset
     legend.text-sm.font-regular.ml-10.px-5= label
-    .input-wrap.flex.items-center.justify-between.px-15.pt-10.pb-15
-      input.text-md.font-regular.pr-15(type= type, placeholder= placeholder, value= val)
-      img.icon-sms(src= src, alt="", draggable="false")
+    .input-wrap.flex.items-center.justify-between.px-12.pt-10.pb-15
+      if block
+        block
+      input.text-md.font-regular.px-12(type= type, placeholder= placeholder, value= val)
+      if block
+        block
