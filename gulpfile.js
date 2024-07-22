@@ -59,23 +59,23 @@ async function scssToCss() {
     .pipe(browserSync.stream());
 }
 
-async function tsCompile() {
-  return tsProject
-    .src()
-    .pipe(tsProject())
-    .js
-    .pipe(plumber())
-    .pipe(rigger())
-    .pipe(dest(path.build.js))
-    .pipe(uglify())
-    .pipe(rename({ suffix: ".min", extname: ".js" }))
-    .pipe(dest(path.build.js))
-    .pipe(browserSync.stream());
-}
+// async function tsCompile() {
+//   return tsProject
+//     .src()
+//     .pipe(tsProject())
+//     .js
+//     .pipe(plumber())
+//     .pipe(rigger())
+//     .pipe(dest(path.build.js))
+//     .pipe(uglify())
+//     .pipe(rename({ suffix: ".min", extname: ".js" }))
+//     .pipe(dest(path.build.js))
+//     .pipe(browserSync.stream());
+// }
 
 async function images() {
   return src(path.src.img)
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(dest(path.build.img));
 }
 
@@ -86,7 +86,7 @@ async function fonts() {
 
 async function watchFiles() {
   watch([path.watch.scss], scssToCss);
-  watch([path.watch.ts], tsCompile);
+  // watch([path.watch.ts], tsCompile);
   watch([path.watch.pug], pugToHTML);
   watch([path.watch.img], images);
   watch([path.watch.font], fonts);
@@ -106,11 +106,11 @@ function cleanDist() {
     .pipe(clean());
 }
 
-const build = series(cleanDist, scssToCss, pugToHTML, images, fonts, tsCompile);
+const build = series(cleanDist, scssToCss, pugToHTML, images, fonts);
 const watching = series(build, watchFiles, browsersync);
 
 exports.scssToCss = scssToCss;
-exports.tsCompile = tsCompile;
+// exports.tsCompile = tsCompile;
 exports.pugToHTML = pugToHTML;
 exports.images = images;
 exports.fonts = fonts;
