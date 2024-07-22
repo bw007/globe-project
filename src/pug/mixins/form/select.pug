@@ -1,0 +1,7 @@
+mixin select(val="", label="", ...items)
+  fieldset.input-fieldset
+    legend.text-sm.font-regular.ml-10.px-5= label
+    .select-wrap.flex.items-center.justify-between
+      select.text-md.font-regular.pr-15.px-15.pt-10.pb-15(value= val)
+        each item in items
+          option(value= item)= item

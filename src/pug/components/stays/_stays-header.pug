@@ -8,9 +8,9 @@ header.header
         h3.interaction-panel__title.text-xl.font-semibold Where are you flying?
         form.interaction-panel__form.flex.flex-col.gap-12
           .interaction-panel__form-inner.flex.justify-between.items-center
-            +input("text", "Istanbul, Turkey", "./images/icons/bed-dark.svg", "Enter Destination")
-            +input("text", "Fri 12/2", "./images/icons/calendar-dark.svg", "Check In")
-            +input("text", "Sun 12/4", "./images/icons/calendar-dark.svg", "Check Out")
+            +input-fieldset("text", "Istanbul, Turkey", "./images/icons/bed-dark.svg", "Enter Destination")
+            +input-fieldset("text", "Fri 12/2", "./images/icons/calendar-dark.svg", "Check In")
+            +input-fieldset("text", "Sun 12/4", "./images/icons/calendar-dark.svg", "Check Out")
             +select("Rooms & Guests", "Rooms & Guests", "1 room, 2 guests", "1 room, 4 guests")
           .interaction-panel__form-submit.flex.items-center.justify-end.gap-4.w-full
             button.btn.btn__text

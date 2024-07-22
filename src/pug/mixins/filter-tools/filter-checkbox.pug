@@ -1,0 +1,11 @@
+//- Filter chekbox
+mixin filter-checkbox(title="", ...items)
+  .filter.filter__checkbox.flex.flex-col.gap-6.w-full.pb-25
+    .filter__caption.flex.justify-between.items-center
+      h5.text-md.font-semibold= title
+      img(src="./images/icons/chevron-up.svg")
+    .filter__check-list.flex.flex-col.gap-5
+      each i in items
+        label.text-sm.font-medium.flex.item-center.gap-3
+          input(type="checkbox")
+          span= i

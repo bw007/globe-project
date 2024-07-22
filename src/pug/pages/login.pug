@@ -7,8 +7,8 @@ block content
       h1.text-5xl.font-bold.font-trade-gothic Login
       p.text-md Login to access your Golobe account
       .flex.flex-col.gap-8.mt-10
-        +input("email", "Email...", "", "Email", "john.doe@gmail.com")
-        +input("password", "Password...", "./images/icons/eye-off.svg", "Password", "12345678")
+        +input-fieldset("email", "Email...", "", "Email", "john.doe@gmail.com")
+        +input-fieldset("password", "Password...", "./images/icons/eye-off.svg", "Password", "12345678")
         .flex.justify-between.mt-6
           .flex.items-center.gap-4
             input(type="checkbox", id="rem")

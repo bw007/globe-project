@@ -8,10 +8,10 @@ header.header
         h3.interaction-panel__title.text-xl.font-semibold Where are you flying?
         form.interaction-panel__form.flex.flex-col.gap-12.w-full
           .interaction-panel__form-inner.w-full
-            +input("text", "Route", "./images/icons/swap-horizontal.svg", "From - To", "Lahore - Karachi")
+            +input-fieldset("text", "Route", "./images/icons/swap-horizontal.svg", "From - To", "Lahore - Karachi")
             +select("Return", "Trip", "Return", "Departure")
-            +input("text", "Route", "./images/icons/calendar-dark.svg", "Depart- Return", "07 Nov 22 - 13 Nov 22")
-            +input("text", "Route", "./images/icons/breifcase-dark.svg", "Passenger - Class", "1 Passenger, Economy")
+            +input-fieldset("text", "Route", "./images/icons/calendar-dark.svg", "Depart- Return", "07 Nov 22 - 13 Nov 22")
+            +input-fieldset("text", "Route", "./images/icons/breifcase-dark.svg", "Passenger - Class", "1 Passenger, Economy")
           .interaction-panel__form-submit.flex.items-center.justify-end.gap-4.w-full
             button.btn.btn__text
               img(src="./images/icons/plus.svg")
